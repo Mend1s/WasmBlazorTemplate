@@ -2,92 +2,73 @@
 
 <PageTitle>Home</PageTitle>
 
-<div style="margin-top: 20px">
+@* <MudImage Fluid="true" Width="1920" Src="assets/bg-hero.jpg" ObjectPosition="ObjectPosition.Center" /> *@
+@* <div style="margin-top: 20px">
     <MudGrid>
-        <MudItem xs="12" md="6" Class="flex flex-col justify-center align-center">
-            <MudText Typo="Typo.h3" GutterBottom="true" Class="tst-f">
-                Bem-vindo ao <b>Studio Mendes</b>
+        <MudItem xs="12" md="6" Class="flex flex-col justify-center text-white space-y-4">
+            <MudText Typo="Typo.h3" Class="font-bold">
+                Soluções ambientais que <br />
+                transformam <span class="text-green-400">resíduos em energia</span> <br />
+                e sustentabilidade
             </MudText>
-            <MudText Typo="Typo.body1" GutterBottom="true" Class="tst-f">
-                Criamos soluções criativas para o seu negócio. Landing pages, design e marketing — tudo em um só lugar.
+
+            <MudText Typo="Typo.body1">
+                Mais de 15 anos oferecendo <b>inovação</b>, <b>compliance</b> e <b>impacto positivo</b> para empresas e para o planeta.
             </MudText>
-            <MudButton Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large">
-                Fale Conosco
+
+            <MudButton Variant="Variant.Filled" Color="Color.Success" Size="Size.Large">
+                Entre em contato
             </MudButton>
         </MudItem>
-
-        <MudItem xs="12" md="6" Class="flex justify-center">
-            <MudImage Src="https://s2-g1.glbimg.com/MVIpOVDJgHL5JQkPIkh6NbAtkzw=/0x0:620x794/984x0/smart/filters:strip_icc()/s.glbimg.com/jo/g1/f/original/2012/03/06/caters_monkey_snapper_03.jpg" Width=500 Height=300 Alt="Landing page demo" />
-        </MudItem>
     </MudGrid>
+</div> *@
+
+<div class="hero-section">
+    <div class="hero-overlay">
+        <MudContainer MaxWidth="MaxWidth.Large" Class="h-full flex items-center">
+            <MudGrid>
+                <MudItem xs="12" md="6" Class="flex flex-col justify-center space-y-4">
+                    <MudText Typo="Typo.h2" Class="ft-padrao c-w w-400 fs-titulo pb-5">
+                        Soluções ambientais <br />
+                        que <span class="w-500">
+                            transformam <br />resíduos em energia <br />
+                            e sustentabilidade
+                        </span>
+                    </MudText>
+
+                    <MudText Typo="Typo.body1" Class="ft-padrao fs-subt c-w w-400">
+                        Mais de 15 anos oferecendo <strong class="w-500"> inovação,<br /> compliance e impacto positivo </strong> para <br /> empresas e para o planeta.
+                    </MudText>
+                </MudItem>
+
+            </MudGrid>
+        </MudContainer>
+    </div>
 </div>
-<Counter></Counter>
-<Weather></Weather>
 
-@* <MudGrid>
-    <!-- Texto -->
-    <MudItem xs="12" md="6" Class="flex flex-col justify-center">
-        <MudText Typo="Typo.h3" GutterBottom="true">
-            Bem-vindo ao <b>Studio Mendes</b>
-        </MudText>
-        <MudText Typo="Typo.body1" GutterBottom="true">
-            Criamos soluções criativas para o seu negócio. Landing pages, design e marketing — tudo em um só lugar.
-        </MudText>
-        <MudButton Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large">
-            Fale Conosco
-        </MudButton>
-    </MudItem>
+<style>
+    .hero-section {
+        position: relative;
+        width: 100%;
+        height: 70vh; /* altura do hero */
+        background: url("assets/bg-hero.jpg") center center / cover no-repeat;
+    }
 
-    <!-- Imagem -->
-    <MudItem xs="12" md="6" Class="flex justify-center">
-        <MudPaper Class="rounded-2xl shadow-lg p-4">
-            <MudImage Src="https://s2-g1.glbimg.com/MVIpOVDJgHL5JQkPIkh6NbAtkzw=/0x0:620x794/984x0/smart/filters:strip_icc()/s.glbimg.com/jo/g1/f/original/2012/03/06/caters_monkey_snapper_03.jpg" Width=500 Height=300 Alt="Landing page demo" />
-        </MudPaper>
-    </MudItem>
-</MudGrid>
-
-<MudDivider Class="my-12" /> *@
-
-<!-- Seção de Benefícios -->
-@* <MudGrid Spacing="3">
-    <MudItem xs="12" md="4">
-        <MudPaper Class="p-6 rounded-2xl shadow-sm">
-            <MudText Typo="Typo.h6" GutterBottom="true">🚀 Resultados Rápidos</MudText>
-            <MudText Typo="Typo.body2">
-                Entregamos seu site no ar em poucos dias, pronto para captar clientes.
-            </MudText>
-        </MudPaper>
-    </MudItem>
-
-    <MudItem xs="12" md="4">
-        <MudPaper Class="p-6 rounded-2xl shadow-sm">
-            <MudText Typo="Typo.h6" GutterBottom="true">🎨 Design Moderno</MudText>
-            <MudText Typo="Typo.body2">
-                Layouts responsivos que ficam bonitos em qualquer dispositivo.
-            </MudText>
-        </MudPaper>
-    </MudItem>
-
-    <MudItem xs="12" md="4">
-        <MudPaper Class="p-6 rounded-2xl shadow-sm">
-            <MudText Typo="Typo.h6" GutterBottom="true">📈 Estratégia</MudText>
-            <MudText Typo="Typo.body2">
-                Planejamento de marketing para aumentar suas vendas e presença digital.
-            </MudText>
-        </MudPaper>
-    </MudItem>
-</MudGrid>
-
-<MudDivider Class="my-12" /> *@
-
-<!-- Seção CTA Final -->
-@* <MudGrid>
-    <MudItem xs="12" Class="text-center">
-        <MudText Typo="Typo.h4" GutterBottom="true">
-            Pronto para impulsionar seu negócio?
-        </MudText>
-        <MudButton Variant="Variant.Filled" Color="Color.Secondary" Size="Size.Large">
-            Entre em Contato Agora
-        </MudButton>
-    </MudItem>
-</MudGrid> *@
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        /* background: rgba(0, 0, 0, 0.45); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+</style>
+<GestaoSustentavel />
+<Weather />
+<SolucoesSegmento />
+<ResiduosValor />
+<Clientes />
+<ProjetosMidia />
+<EntreContato />
+<Footer />

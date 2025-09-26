@@ -1,0 +1,42 @@
+﻿.ft-padrao {
+    font-family: "Inter", sans-serif !important;
+}
+
+.fs-titulo {
+    font-size: 56px !important;
+    line-height: 1 !important;
+}
+
+.fs-subt {
+    font-size: 24px !important;
+    line-height: 1 !important;
+}
+
+.fs-subt-2 {
+    font-size: 16px !important;
+    line-height: 1 !important;
+}
+
+.fs-cab {
+    font-size: 8px !important;
+}
+
+.c-w {
+    color: white;
+}
+
+.w-400 {
+    font-weight: 400;
+}
+
+.w-500 {
+    font-weight: 500 !important;
+}
+
+.w-700 {
+    font-weight: 700 !important;
+}
+
+.text-center {
+    text-align: center !important;
+}

@@ -1,14 +1,13 @@
+@import url('./textos.css');
+@import url('./colors.css');
+
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: "Inter", sans-serif !important;
 }
 
-@font-face {
-    font-family: 'Exo';
-    src: url('../fonts/Exo-Regular.ttf') format('truetype');
-}
-
-.tst-f {
-    font-family: 'Exo', sans-serif !important;
+.bg-footer {
+    background: rgba(10, 91, 95, 1);
+    height: 15vh;
 }
 
 h1:focus {

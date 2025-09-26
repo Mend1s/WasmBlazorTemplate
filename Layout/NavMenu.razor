@@ -1,8 +1,19 @@
-﻿<MudAppBar Elevation="1">
+﻿<MudAppBar Elevation="1" Class="nav-bar">
     <MudContainer MaxWidth="MaxWidth.Large">
-        <div class="d-flex justify-space-between">
-            <MudText Typo="Typo.h6" Style="font-family:Exo">Application</MudText>
-            <MudText Typo="Typo.h6" Style="font-family:Exo">testes</MudText>
+        <div class="d-flex justify-space-between align-center">
+            <MudImage Src="assets/logo-colorido.png" Width="150" Fluid ObjectPosition="ObjectPosition.Center" />            
+            <NavMenuLinks />
+            <MudButton Variant="Variant.Filled" Color="Color.Success" DropShadow="false" Size="Size.Medium" Class="text-uppercase bg-btn w-700">
+                Entre em Contato
+            </MudButton>
         </div>
     </MudContainer>
 </MudAppBar>
+
+<style>
+    .nav-bar {
+        background: url("assets/bg-hero.jpg") center center / cover no-repeat;
+        background-position: 25% 18%;
+        /* -webkit-filter: blur(1px); */
+    }
+</style>
