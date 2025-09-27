@@ -9,87 +9,32 @@
         </MudText>
     </MudContainer>
 
-    <MudGrid Justify="Justify.Center" Class="pb-8">
-        <MudItem xs="12" md="1">
-            <MudCard>
-                <MudCardContent>
-                    <div class="d-flex justify-center align-center">
-                        <MudAvatar Color="Color.Secondary">I</MudAvatar>
-                    </div>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
+    <div class="logo-slider pb-9">
+        <div class="logo-track">
+            @foreach (var logo in Logos)
+            {
+                <div class="logo-card">
+                    <MudPaper Elevation="25"
+                              Class="p-4 rounded-lg shadow-md d-flex justify-center align-center"
+                              style="width: 200px !important; height: 180px !important;">
+                        <img src="@logo" class="h-12 object-contain" />
+                    </MudPaper>
+                </div>
+            }
 
-        <MudItem xs="12" md="1">
-            <MudCard>
-                <MudCardContent>
-                    <div class="d-flex justify-center align-center">
-                        <MudAvatar Color="Color.Secondary">I</MudAvatar>
-                    </div>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
-
-        <MudItem xs="12" md="1">
-            <MudCard>
-                <MudCardContent>
-                    <div class="d-flex justify-center align-center">
-                        <MudAvatar Color="Color.Secondary">I</MudAvatar>
-                    </div>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
-
-        <MudItem xs="12" md="1">
-            <MudCard>
-                <MudCardContent>
-                    <div class="d-flex justify-center align-center">
-                        <MudAvatar Color="Color.Secondary">I</MudAvatar>
-                    </div>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
-
-@*         <MudItem xs="12" md="1">
-            <MudCard>
-                <MudCardContent>
-                    <div class="d-flex justify-center align-center">
-                        <MudAvatar Color="Color.Secondary">I</MudAvatar>
-                    </div>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
-
-        <MudItem xs="12" md="1">
-            <MudCard>
-                <MudCardContent>
-                    <div class="d-flex justify-center align-center">
-                        <MudAvatar Color="Color.Secondary">I</MudAvatar>
-                    </div>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
-
-        <MudItem xs="12" md="1">
-            <MudCard>
-                <MudCardContent>
-                    <div class="d-flex justify-center align-center">
-                        <MudAvatar Color="Color.Secondary">I</MudAvatar>
-                    </div>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
-
-        <MudItem xs="12" md="1">
-            <MudCard>
-                <MudCardContent>
-                    <div class="d-flex justify-center align-center">
-                        <MudAvatar Color="Color.Secondary">I</MudAvatar>
-                    </div>
-                </MudCardContent>
-            </MudCard>
-        </MudItem> *@
-    </MudGrid>
+            @* Repete para dar efeito de loop *@
+            @foreach (var logo in Logos)
+            {
+                <div class="logo-card">
+                    <MudPaper Elevation="25"
+                              Class="p-4 rounded-lg shadow-md d-flex justify-center align-center"
+                              style="width: 200px !important; height: 180px !important;">
+                        <img src="@logo" class="h-12 object-contain" />
+                    </MudPaper>
+                </div>
+            }
+        </div>
+    </div>
 
     <MudButton Class="bg-btn text-center w-700"
                Variant="Variant.Filled"
@@ -105,3 +50,17 @@
         height: 75vh;
     }
 </style>
+
+@code {
+    List<string> Logos = new()
+    {
+        "assets/logo-Cargill.png",
+        "assets/logo-FerreroRocher.png",
+        "assets/logo-Heineken.png",
+        "assets/logo-Makro.png",
+        "assets/logo-MasterMartini.png",
+        "assets/logo-NEstle.png",
+        "assets/logo-Únigra.png",
+        "assets/logo-SantaHelena.png"
+    };
+}
