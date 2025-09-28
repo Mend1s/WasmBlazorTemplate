@@ -5,6 +5,10 @@ html, body {
     font-family: "Inter", sans-serif !important;
 }
 
+.bg {
+    background: red;
+}
+
 .bg-footer {
     background: rgba(10, 91, 95, 1);
     height: 15vh;

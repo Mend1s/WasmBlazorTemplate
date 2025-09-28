@@ -2,55 +2,70 @@
 
 <PageTitle>Home</PageTitle>
 
-@* <MudImage Fluid="true" Width="1920" Src="assets/bg-hero.jpg" ObjectPosition="ObjectPosition.Center" /> *@
-@* <div style="margin-top: 20px">
-    <MudGrid>
-        <MudItem xs="12" md="6" Class="flex flex-col justify-center text-white space-y-4">
-            <MudText Typo="Typo.h3" Class="font-bold">
-                Soluções ambientais que <br />
-                transformam <span class="text-green-400">resíduos em energia</span> <br />
-                e sustentabilidade
-            </MudText>
+@* VERSÃO DESKTOP *@
+<MudHidden Breakpoint="Breakpoint.LgAndDown">
+    <div class="hero-section">
+        <div class="hero-overlay">
+            <MudContainer MaxWidth="MaxWidth.Large" Class="h-full flex items-center">
+                <MudGrid>
+                    <MudItem xs="12" md="6" Class="flex flex-col justify-center space-y-4">
+                        <MudText Typo="Typo.h2" Class="ft-padrao c-w w-400 fs-titulo pb-5">
+                            Soluções ambientais <br />
+                            que <span class="w-500">
+                                transformam <br />resíduos em energia <br />
+                                e sustentabilidade
+                            </span>
+                        </MudText>
 
-            <MudText Typo="Typo.body1">
-                Mais de 15 anos oferecendo <b>inovação</b>, <b>compliance</b> e <b>impacto positivo</b> para empresas e para o planeta.
-            </MudText>
+                        <MudText Typo="Typo.body1" Class="ft-padrao fs-subt c-w w-400">
+                            Mais de 15 anos oferecendo <strong class="w-500"> inovação,<br /> compliance e impacto positivo </strong> para <br /> empresas e para o planeta.
+                        </MudText>
+                    </MudItem>
 
-            <MudButton Variant="Variant.Filled" Color="Color.Success" Size="Size.Large">
-                Entre em contato
-            </MudButton>
-        </MudItem>
-    </MudGrid>
-</div> *@
-
-<div class="hero-section">
-    <div class="hero-overlay">
-        <MudContainer MaxWidth="MaxWidth.Large" Class="h-full flex items-center">
-            <MudGrid>
-                <MudItem xs="12" md="6" Class="flex flex-col justify-center space-y-4">
-                    <MudText Typo="Typo.h2" Class="ft-padrao c-w w-400 fs-titulo pb-5">
-                        Soluções ambientais <br />
-                        que <span class="w-500">
-                            transformam <br />resíduos em energia <br />
-                            e sustentabilidade
-                        </span>
-                    </MudText>
-
-                    <MudText Typo="Typo.body1" Class="ft-padrao fs-subt c-w w-400">
-                        Mais de 15 anos oferecendo <strong class="w-500"> inovação,<br /> compliance e impacto positivo </strong> para <br /> empresas e para o planeta.
-                    </MudText>
-                </MudItem>
-
-            </MudGrid>
-        </MudContainer>
+                </MudGrid>
+            </MudContainer>
+        </div>
     </div>
-</div>
+</MudHidden>
+
+@* VERSÃO MOBILE *@
+<MudHidden Breakpoint="Breakpoint.SmAndUp">
+    <div class="hero-section-m">
+        <div class="hero-overlay-m">
+            <MudContainer MaxWidth="MaxWidth.Large">
+                <MudGrid>
+                    <MudItem Class="flex flex-col justify-center">
+                        <MudText Class="ft-padrao c-w w-400 fs-titulo-m pb-5">
+                            Soluções ambientais <br />
+                            que <span class="w-500">
+                                transformam <br />resíduos em energia <br />
+                                e sustentabilidade
+                            </span>
+                        </MudText>
+
+                        <MudText Class="ft-padrao fs-subt-m c-w w-400">
+                            Mais de 15 anos oferecendo <strong class="w-500"> inovação,<br /> compliance e impacto positivo </strong> para <br /> empresas e para o planeta.
+                        </MudText>
+                    </MudItem>
+
+                </MudGrid>
+            </MudContainer>
+        </div>
+    </div>
+</MudHidden>
 
 <style>
     .hero-section {
         position: relative;
         width: 100%;
         height: 70vh; /* altura do hero */
+        background: url("assets/bg-hero.jpg") center center / cover no-repeat;
+    }
+
+    .hero-section-m {
+        position: relative;
+        width: 100%;
+        height: 50vh; /* altura do hero */
         background: url("assets/bg-hero.jpg") center center / cover no-repeat;
     }
 
@@ -62,6 +77,15 @@
         align-items: center;
         justify-content: center;
         padding: 2rem;
+    }
+
+    .hero-overlay-m {
+        position: absolute;
+        inset: 0;
+        /* background: rgba(0, 0, 0, 0.45); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 </style>
 <GestaoSustentavel />

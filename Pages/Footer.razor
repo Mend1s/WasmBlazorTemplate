@@ -1,16 +1,42 @@
-﻿<div class="bg-footer d-flex align-center">
-    <MudContainer MaxWidth="MaxWidth.Large" Class="h-full flex items-center">
+﻿@* VERSÃO DESKTOP *@
+<MudHidden Breakpoint="Breakpoint.LgAndDown">
+    <div class="bg-footer d-flex align-center">
+        <MudContainer MaxWidth="MaxWidth.Large" Class="h-full flex items-center">
 
-        <div class="d-flex justify-space-between align-center">
-            <MudImage Src="assets/logo-branco.svg" Width="280" Height="67" ObjectPosition="ObjectPosition.Center" />
+            <div class="d-flex justify-space-between align-center">
+                <MudImage Src="assets/logo-branco.svg" Width="200" Height="37" ObjectPosition="ObjectPosition.Center" />
 
-            <MudText Typo="Typo.body2">
-                © Copyright 2025 Copfy | Todos os direitos reservados
-            </MudText>
+                <MudText Class="fs-subt-m c-w">
+                    <strong class="footer-bg">© Copyright 2025 Copfy</strong> | Todos os direitos reservados
+                </MudText>
 
-            <MudText Typo="Typo.body2">
-                Siga Nossas Redes:
-            </MudText>
-        </div>
-    </MudContainer>
-</div>
+                <MudText Class="fs-subt-m c-w">
+                    <strong class="footer-bg">Siga Nossas Redes:</strong>
+                </MudText>
+            </div>
+        </MudContainer>
+    </div>
+</MudHidden>
+
+@* VERSÃO MOBILE *@
+<MudHidden Breakpoint="Breakpoint.SmAndUp">
+    <div class="bg-footer d-flex align-center">
+        <MudContainer MaxWidth="MaxWidth.Large" Class="h-full flex items-center">
+
+            <div class="d-flex justify-center align-center flex-wrap gap-5">
+                <MudImage Src="assets/logo-branco.svg"
+                          Width="130"
+                          Height="30"
+                          ObjectPosition="ObjectPosition.Center" />
+
+                <MudText Class="fs-subt-m c-w">
+                    <strong class="footer-bg">© Copyright 2025 Copfy</strong> | Todos os direitos reservados
+                </MudText>
+
+                <MudText Class="fs-subt-m c-w">
+                    <strong class="footer-bg">Siga Nossas Redes:</strong>
+                </MudText>
+            </div>
+        </MudContainer>
+    </div>
+</MudHidden>

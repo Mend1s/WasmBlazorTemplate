@@ -1,39 +1,84 @@
-﻿<div class="wrapper9 d-flex align-center justify-center flex-column bg-g">
-    <MudContainer MaxWidth="MaxWidth.Large">
-        <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-subt-2 pb-7 f-h">
-            • BELLA VISTA NA MÍDIA
-        </MudText>
+﻿@* VERSÃO DESKTOP *@
+<MudHidden Breakpoint="Breakpoint.LgAndDown">
+    <div class="wrapper9 d-flex align-center justify-center flex-column bg-g">
+        <MudContainer MaxWidth="MaxWidth.Large">
+            <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-subt-2 pb-7 f-h">
+                • BELLA VISTA NA MÍDIA
+            </MudText>
 
-        <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-titulo pb-7">
-            Confira nossas <strong class="f-s-g">iniciativas<br /> e projetos</strong>
-        </MudText>
+            <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-titulo pb-7">
+                Confira nossas <strong class="f-s-g">iniciativas<br /> e projetos</strong>
+            </MudText>
 
-        <MudGrid Justify="Justify.Center">
-            <MudItem xs="12" md="6">
-                <MudCard>
-                    <MudCardContent>
-                        <div class="d-flex justify-center align-center">
-                            <MudAvatar Color="Color.Secondary">I</MudAvatar>
-                        </div>
-                    </MudCardContent>
-                </MudCard>
-            </MudItem>
+            <MudGrid Justify="Justify.Center">
+                <MudItem xs="12" md="6">
+                    <MudCard>
+                        <MudCardContent>
+                            <div class="d-flex justify-center align-center">
+                                <MudAvatar Color="Color.Secondary">I</MudAvatar>
+                            </div>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
 
-            <MudItem xs="12" md="6">
-                <MudCard>
-                    <MudCardContent>
-                        <div class="d-flex justify-center align-center">
-                            <MudAvatar Color="Color.Secondary">I</MudAvatar>
-                        </div>
-                    </MudCardContent>
-                </MudCard>
-            </MudItem>
-        </MudGrid>
-    </MudContainer>
-</div>
+                <MudItem xs="12" md="6">
+                    <MudCard>
+                        <MudCardContent>
+                            <div class="d-flex justify-center align-center">
+                                <MudAvatar Color="Color.Secondary">I</MudAvatar>
+                            </div>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+            </MudGrid>
+        </MudContainer>
+    </div>
+</MudHidden>
+
+@* VERSÃO MOBILE *@
+<MudHidden Breakpoint="Breakpoint.SmAndUp">
+    <div class="wrapper9-m d-flex align-center justify-center flex-column bg-g">
+        <MudContainer MaxWidth="MaxWidth.Large">
+            <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-subt-m pb-7 f-h">
+                • BELLA VISTA NA MÍDIA
+            </MudText>
+
+            <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-titulo-m pb-7">
+                Confira nossas <strong class="f-s-g">iniciativas e projetos</strong>
+            </MudText>
+
+            <MudGrid Justify="Justify.Center">
+                <MudItem xs="12" md="6">
+                    <MudCard>
+                        <MudCardContent>
+                            <div class="d-flex justify-center align-center">
+                                <MudAvatar Color="Color.Secondary">I</MudAvatar>
+                            </div>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+
+                <MudItem xs="12" md="6">
+                    <MudCard>
+                        <MudCardContent>
+                            <div class="d-flex justify-center align-center">
+                                <MudAvatar Color="Color.Secondary">I</MudAvatar>
+                            </div>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+            </MudGrid>
+        </MudContainer>
+    </div>
+</MudHidden>
 
 <style>
     .wrapper9 {
         height: 75vh;
+    }
+
+    .wrapper9-m {
+        height: 100%;
+        padding: 30px 0;
     }
 </style>

@@ -1,53 +1,109 @@
 ﻿<MudContainer MaxWidth="MaxWidth.Large">
     <MudDivider />
 </MudContainer>
-<div class="wrapper5 d-flex align-center justify-center flex-column">
-    <MudContainer MaxWidth="MaxWidth.Large">
-        <MudText Typo="Typo.h3"
-                 Class="ft-padrao text-center fs-titulo pb-9">
-            Nossos clientes <strong class="f-s-g">confiam <br />em nossas soluções</strong><br />
-        </MudText>
-    </MudContainer>
 
-    <div class="logo-slider pb-9">
-        <div class="logo-track">
-            @foreach (var logo in Logos)
-            {
-                <div class="logo-card">
-                    <MudPaper Elevation="25"
-                              Class="p-4 rounded-lg shadow-md d-flex justify-center align-center"
-                              style="width: 200px !important; height: 180px !important;">
-                        <img src="@logo" class="h-12 object-contain" />
-                    </MudPaper>
-                </div>
-            }
+@* VERSÃO DESKTOP *@
+<MudHidden Breakpoint="Breakpoint.LgAndDown">
+    <div class="wrapper5 d-flex align-center justify-center flex-column">
+        <MudContainer MaxWidth="MaxWidth.Large">
+            <MudText Typo="Typo.h3"
+                     Class="ft-padrao text-center fs-titulo pb-9">
+                Nossos clientes <strong class="f-s-g">confiam <br />em nossas soluções</strong><br />
+            </MudText>
+        </MudContainer>
 
-            @* Repete para dar efeito de loop *@
-            @foreach (var logo in Logos)
-            {
-                <div class="logo-card">
-                    <MudPaper Elevation="25"
-                              Class="p-4 rounded-lg shadow-md d-flex justify-center align-center"
-                              style="width: 200px !important; height: 180px !important;">
-                        <img src="@logo" class="h-12 object-contain" />
-                    </MudPaper>
-                </div>
-            }
+        <div class="logo-slider pb-9">
+            <div class="logo-track">
+                @foreach (var logo in Logos)
+                {
+                    <div class="logo-card">
+                        <MudPaper Elevation="25"
+                                  Class="p-4 rounded-lg shadow-md d-flex justify-center align-center"
+                                  style="width: 200px !important; height: 180px !important;">
+                            <img src="@logo" class="h-12 object-contain" />
+                        </MudPaper>
+                    </div>
+                }
+
+                @* Repete para dar efeito de loop *@
+                @foreach (var logo in Logos)
+                {
+                    <div class="logo-card">
+                        <MudPaper Elevation="25"
+                                  Class="p-4 rounded-lg shadow-md d-flex justify-center align-center"
+                                  style="width: 200px !important; height: 180px !important;">
+                            <img src="@logo" class="h-12 object-contain" />
+                        </MudPaper>
+                    </div>
+                }
+            </div>
         </div>
-    </div>
 
-    <MudButton Class="bg-btn text-center w-700"
-               Variant="Variant.Filled"
-               Color="Color.Success"
-               Size="Size.Medium"
-               EndIcon="@Icons.Material.Filled.ArrowOutward">
-        Seja um parceiro da Bella Vista Ambiental
-    </MudButton>
-</div>
+        <MudButton Class="bg-btn text-center w-700"
+                   Variant="Variant.Filled"
+                   Color="Color.Success"
+                   Size="Size.Medium"
+                   EndIcon="@Icons.Material.Filled.ArrowOutward">
+            Seja um parceiro da Bella Vista Ambiental
+        </MudButton>
+    </div>
+</MudHidden>
+
+@* VERSÃO MOBILE *@
+<MudHidden Breakpoint="Breakpoint.SmAndUp">
+    <div class="wrapper5-m d-flex align-center justify-center flex-column">
+        <MudContainer MaxWidth="MaxWidth.Large">
+            <MudText Typo="Typo.h3"
+                     Class="ft-padrao text-center fs-titulo-m pb-9">
+                Nossos clientes <strong class="f-s-g">confiam <br />em nossas soluções</strong><br />
+            </MudText>
+        </MudContainer>
+
+        <div class="logo-slider pb-9">
+            <div class="logo-track">
+                @foreach (var logo in Logos)
+                {
+                    <div class="logo-card">
+                        <MudPaper Elevation="25"
+                                  Class="p-4 rounded-lg shadow-md d-flex justify-center align-center"
+                                  style="width: 200px !important; height: 180px !important;">
+                            <img src="@logo" class="h-12 object-contain" />
+                        </MudPaper>
+                    </div>
+                }
+
+                @* Repete para dar efeito de loop *@
+                @foreach (var logo in Logos)
+                {
+                    <div class="logo-card">
+                        <MudPaper Elevation="25"
+                                  Class="p-4 rounded-lg shadow-md d-flex justify-center align-center"
+                                  style="width: 200px !important; height: 180px !important;">
+                            <img src="@logo" class="h-12 object-contain" />
+                        </MudPaper>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <MudButton Class="bg-btn text-center w-700"
+                   Variant="Variant.Filled"
+                   Color="Color.Success"
+                   Size="Size.Small"                   
+                   EndIcon="@Icons.Material.Filled.ArrowOutward">
+            Seja um parceiro da Bella Vista Ambiental
+        </MudButton>
+    </div>
+</MudHidden>
 
 <style>
     .wrapper5 {
         height: 75vh;
+    }
+
+    .wrapper5-m {
+        height: 100%;
+        padding: 30px 0;
     }
 </style>
 
@@ -60,7 +116,6 @@
         "assets/logo-Makro.png",
         "assets/logo-MasterMartini.png",
         "assets/logo-NEstle.png",
-        "assets/logo-Únigra.png",
-        "assets/logo-SantaHelena.png"
+        "assets/logo-Únigra.png"        
     };
 }

@@ -1,29 +1,65 @@
-﻿<div class="bg-segmento wrapper8 d-flex align-center justify-center">
-    <MudContainer MaxWidth="MaxWidth.Large"
-                  Class="h-full flex items-center">
-        <MudText Typo="Typo.h3"
-                 Class="ft-padrao text-center fs-subt-2 pb-7 c-w">
-            • ENTRE EM CONTATO
-        </MudText>
+﻿@page "/quem-somos"
 
-        <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-titulo pb-9 c-w">
-            Quer reduzir custos, proteger sua marca e contribuir para um planeta mais sustentável?
-        </MudText>
+@* VERSÃO DESKTOP *@
+<MudHidden Breakpoint="Breakpoint.LgAndDown">
+    <div class="bg-segmento wrapper8 d-flex align-center justify-center">
+        <MudContainer MaxWidth="MaxWidth.Large"
+                      Class="h-full flex items-center">
+            <MudText Typo="Typo.h3"
+                     Class="ft-padrao text-center fs-subt-2 pb-7 c-w">
+                • ENTRE EM CONTATO
+            </MudText>
 
-        <div class="d-flex justify-center">
-            <MudButton Class="bg-btn text-center w-700"
-                       Variant="Variant.Filled"
-                       Color="Color.Success"
-                       Size="Size.Medium"
-                       EndIcon="@Icons.Material.Filled.ArrowOutward">
-                Solicite agora um diagnóstico
-            </MudButton>
-        </div>
-    </MudContainer>
-</div>
+            <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-titulo pb-9 c-w">
+                Quer reduzir custos, proteger sua marca e contribuir para um planeta mais sustentável?
+            </MudText>
+
+            <div class="d-flex justify-center">
+                <MudButton Class="bg-btn text-center w-700"
+                           Variant="Variant.Filled"
+                           Color="Color.Success"
+                           Size="Size.Medium"
+                           EndIcon="@Icons.Material.Filled.ArrowOutward">
+                    Solicite agora um diagnóstico
+                </MudButton>
+            </div>
+        </MudContainer>
+    </div>
+</MudHidden>
+
+@* VERSÃO MOBILE *@
+<MudHidden Breakpoint="Breakpoint.SmAndUp">
+    <div class="bg-segmento wrapper8-m d-flex align-center justify-center">
+        <MudContainer MaxWidth="MaxWidth.Large"
+                      Class="h-full flex items-center">
+            <MudText Class="ft-padrao text-center fs-subt-m pb-7 c-w">
+                • ENTRE EM CONTATO
+            </MudText>
+
+            <MudText Class="ft-padrao text-center fs-titulo-m pb-9 c-w">
+                <strong>Quer reduzir custos, proteger sua marca</strong> e contribuir para um planeta mais sustentável?
+            </MudText>
+
+            <div class="d-flex justify-center">
+                <MudButton Class="bg-btn text-center w-700"
+                           Variant="Variant.Filled"
+                           Color="Color.Success"
+                           Size="Size.Small"
+                           EndIcon="@Icons.Material.Filled.ArrowOutward">
+                    Solicite agora um diagnóstico
+                </MudButton>
+            </div>
+        </MudContainer>
+    </div>
+</MudHidden>
 
 <style>
     .wrapper8 {
         height: 53.1vh;
+    }
+
+    .wrapper8-m {
+        height: 100%;
+        padding: 30px 0;
     }
 </style>

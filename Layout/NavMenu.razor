@@ -1,14 +1,55 @@
-﻿<MudAppBar Elevation="1" Class="nav-bar">
-    <MudContainer MaxWidth="MaxWidth.Large">
-        <div class="d-flex justify-space-between align-center">
-            <MudImage Src="assets/logo-colorido.png" Width="150" Fluid ObjectPosition="ObjectPosition.Center" />            
-            <NavMenuLinks />
-            <MudButton Variant="Variant.Filled" Color="Color.Success" DropShadow="false" Size="Size.Medium" Class="text-uppercase bg-btn w-700">
-                Entre em Contato
-            </MudButton>
-        </div>
-    </MudContainer>
-</MudAppBar>
+﻿@* VERSÃO DESKTOP *@
+<MudHidden Breakpoint="Breakpoint.LgAndDown">
+    <MudAppBar Elevation="1" Class="nav-bar">
+        <MudContainer MaxWidth="MaxWidth.Large">
+            <div class="d-flex justify-space-between align-center">
+                <MudImage Src="assets/logo-colorido.png" Width="150" Fluid ObjectPosition="ObjectPosition.Center" />
+                @* <NavMenuLinks /> *@
+                <MudButton Variant="Variant.Filled"
+                           Color="Color.Success"
+                           DropShadow="false"
+                           Size="Size.Medium"
+                           Class="text-uppercase bg-btn w-700">
+                    Entre em Contato
+                </MudButton>
+            </div>
+        </MudContainer>
+    </MudAppBar>
+</MudHidden>
+
+@* VERSÃO MOBILE *@
+<MudHidden Breakpoint="Breakpoint.SmAndUp">
+    <MudAppBar Elevation="1" Class="nav-bar">
+        <MudContainer MaxWidth="MaxWidth.Large">
+            @* <MudImage Src="assets/logo-colorido.png" Width="100" Fluid ObjectPosition="ObjectPosition.Center" /> *@
+            <MudIconButton Icon="@Icons.Material.Filled.Menu"
+                           Color="Color.Inherit"
+                           Edge="Edge.End"
+                           OnClick="@ToggleDrawer" />
+        </MudContainer>
+    </MudAppBar>
+    <MudDrawer @bind-Open="@_open" Elevation="1">
+        <MudDrawerHeader>
+            <MudImage Src="assets/logo-colorido.png" Fluid ObjectPosition="ObjectPosition.Center" />
+        </MudDrawerHeader>
+        <MudNavMenu>
+            <MudNavLink Match="NavLinkMatch.All" href="#">Home</MudNavLink>
+            <MudNavLink href="quem-somos">Quem somos</MudNavLink>
+            <MudNavLink href="compliance">Compliance</MudNavLink>
+            <MudNavLink href="servicos">Serviços</MudNavLink>
+            <MudNavLink href="news">News</MudNavLink>
+        </MudNavMenu>
+    </MudDrawer>
+</MudHidden>
+
+@code {
+    private bool _open = false;
+
+    private void ToggleDrawer()
+    {
+        _open = !_open;
+    }
+}
 
 <style>
     .nav-bar {
