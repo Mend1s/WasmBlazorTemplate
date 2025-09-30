@@ -1,0 +1,94 @@
+﻿@page "/quem-somos"
+
+@inject IJSRuntime JS
+
+<PageTitle>Quem Somos | Bella Vista Ambiental</PageTitle>
+
+@* VERSÃO DESKTOP *@
+<MudHidden Breakpoint="Breakpoint.SmAndDown">
+    <div class="wrapper-qm-s d-flex align-center justify-center">
+        <MudContainer MaxWidth="MaxWidth.Large" Class="flex items-center">
+            <MudGrid class="d-flex align-center">
+                <MudItem xs="12" md="6" Class="flex flex-col text-white space-y-4">
+                    <MudText Typo="Typo.h3" Class="ft-padrao fs-subt-2 pb-7 f-h">
+                        • INSTITUCIONAL
+                    </MudText>
+
+                    <MudText Typo="Typo.h3" Class="ft-padrao fs-titulo pb-7">
+                        <strong class="f-s-g">Há mais de 15 anos</strong><br />nós transformamos resíduos em soluções sustentáveis.
+                    </MudText>
+
+                    <MudText Typo="Typo.body1" Class="ft-padrao fs-subt-2 pb-7">
+                        A Bella Vista Ambiental é especializada na gestão de resíduos orgânicos e recicláveis, oferecendo soluções sustentáveis para empresas de diversos setores. Localizada em Limeira/SP, contamos com biodigestor próprio, centro de triagem, frota de caminhões e equipamentos de descaracterização de produtos.
+                    </MudText>
+
+                    <MudText Typo="Typo.body1" Class="ft-padrao fs-subt-2 pb-7">
+                        Nosso propósito é reduzir impactos ambientais, gerar energia limpa e fortalecer a economia circular, sempre com ética, compliance e foco na sustentabilidade.
+                    </MudText>
+                </MudItem>
+
+                <MudItem xs="12" md="6" Style="height:auto;">
+                    <MudImage Src="assets/sobrenos-caminhoes.png" Fluid Class="rounded-lg" ObjectPosition="ObjectPosition.Center" />
+                </MudItem>
+            </MudGrid>
+        </MudContainer>
+    </div>
+</MudHidden>
+
+@* VERSÃO MOBILE *@
+<MudHidden Breakpoint="Breakpoint.MdAndUp">
+    <div class="wrapper-qms-m d-flex align-center justify-center">
+        <MudContainer MaxWidth="MaxWidth.Large" Class="flex items-center">
+            <MudGrid>
+                <MudItem Class="flex flex-col justify-center align-center text-white space-y-4">
+                    <MudText Class="ft-padrao text-center fs-subt-m pb-5 f-h">
+                        • INSTITUCIONAL
+                    </MudText>
+
+                    <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-titulo-m pb-7">
+                        <strong class="f-s-g">Há mais de 15 anos</strong><br />nós transformamos resíduos em soluções sustentáveis.
+                    </MudText>
+
+                    <MudText Class="ft-padrao text-center fs-subt-m pb-7">
+                        A Bella Vista Ambiental é especializada na gestão de resíduos orgânicos e recicláveis, oferecendo soluções sustentáveis para empresas de diversos setores. Localizada em Limeira/SP, contamos com biodigestor próprio, centro de triagem, frota de caminhões e equipamentos de descaracterização de produtos.
+                    </MudText>
+
+                    <MudText Class="ft-padrao text-center fs-subt-m pb-7">
+                        Nosso propósito é reduzir impactos ambientais, gerar energia limpa e fortalecer a economia circular, sempre com ética, compliance e foco na sustentabilidade.
+                    </MudText>
+                </MudItem>
+            </MudGrid>
+        </MudContainer>
+    </div>
+</MudHidden>
+<div class="reveal">
+    <SelosQuemSomos />
+</div>
+
+<div class="l-qm mt-12 mb-12" />
+
+<style>
+    .wrapper-qm-s {
+        height: 74.7vh;
+    }
+
+    .wrapper-qms-m {
+        height: 100%;
+        padding: 30px 0
+    }
+
+    .l-qm {
+        height: 100px;
+        background: linear-gradient(85.18deg, #1B804D -3.87%, #89BB48 118.16%);
+    }
+</style>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("initScrollAnimations");
+        }
+    }
+}

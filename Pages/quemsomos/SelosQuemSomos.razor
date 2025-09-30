@@ -1,0 +1,33 @@
+﻿@* VERSÃO DESKTOP *@
+<MudHidden Breakpoint="Breakpoint.SmAndDown">
+    <div class="wrapper-qms-selos d-flex align-center">
+        <MudContainer MaxWidth="MaxWidth.Large" Class="d-flex justify-space-between">
+            <MudImage Src="assets/selo1-qms.png" Fluid ObjectPosition="ObjectPosition.Center" />
+            <MudImage Src="assets/selo2-qms.png" Fluid ObjectPosition="ObjectPosition.Center" />
+            <MudImage Src="assets/selo3-qms.png" Fluid ObjectPosition="ObjectPosition.Center" />
+        </MudContainer>
+    </div>
+</MudHidden>
+
+@* VERSÃO MOBILE *@
+<MudHidden Breakpoint="Breakpoint.MdAndUp">
+    <div class="wrapper-qms-selos-m d-flex align-center">
+        <MudContainer MaxWidth="MaxWidth.Large" Class="d-flex justify-center align-center flex-wrap gap-6">
+            <MudImage Src="assets/selo1-qms.png" Fluid ObjectPosition="ObjectPosition.Center" />
+            <MudImage Src="assets/selo2-qms.png" Fluid ObjectPosition="ObjectPosition.Center" />
+            <MudImage Src="assets/selo3-qms.png" Fluid ObjectPosition="ObjectPosition.Center" />
+        </MudContainer>
+    </div>
+</MudHidden>
+
+
+<style>
+    .wrapper-qms-selos {
+        height: 60vh;
+    }
+
+    .wrapper-qms-selos-m {
+        height: 100%;
+        padding: 30px 0
+    }
+</style>
