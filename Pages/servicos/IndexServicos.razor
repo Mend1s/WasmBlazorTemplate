@@ -1,0 +1,75 @@
+﻿@page "/servicos"
+
+@inject IJSRuntime JS
+
+<PageTitle>Serviços | Bella Vista Ambiental</PageTitle>
+
+@* VERSÃO DESKTOP *@
+<MudHidden Breakpoint="Breakpoint.SmAndDown">
+    <div class="hero-section d-flex align-center justify-center">
+        <MudText Class="ft-padrao text-center fs-titulo c-w w-700">
+            Nossas Soluções<br />Ambientais
+        </MudText>
+    </div>
+</MudHidden>
+
+@* VERSÃO MOBILE *@
+<MudHidden Breakpoint="Breakpoint.MdAndUp">
+    <div class="hero-section-m d-flex align-center justify-center">
+        <MudText Class="ft-padrao text-center fs-titulo-m c-w w-700">
+            Nossas Soluções<br />Ambientais
+        </MudText>
+    </div>
+</MudHidden>
+
+<div class="reveal">
+    <SolucoesServicos />
+</div>
+
+<div class="reveal">
+    <NossosDiferenciasServicos />
+</div>
+
+<div class="reveal">
+    <GestaoServicos />
+</div>
+
+<div class="reveal">
+    <ProtecaoServicos />
+</div>
+
+<div class="reveal">
+    <AterroZeroServicos />
+</div>
+
+<div class="reveal">
+    <EntreContatoServicos />
+</div>
+
+<Footer />
+
+<style>
+    .hero-section {
+        position: relative;
+        width: 100%;
+        height: 30vh; /* altura do hero */
+        background: url("assets/banner-servicos.png") center center / cover no-repeat;
+    }
+
+    .hero-section-m {
+        position: relative;
+        width: 100%;
+        height: 15vh; /* altura do hero */
+        background: url("assets/banner-servicos.png") center center / cover no-repeat;
+    }
+</style>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("initScrollAnimations");
+        }
+    }
+}

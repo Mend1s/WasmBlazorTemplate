@@ -10,6 +10,14 @@
     color: rgba(27, 128, 77, 1);
 }
 
+.f-h2 {
+    background: linear-gradient(85.18deg, #1B804D -3.87%, #89BB48 118.16%);
+    -webkit-background-clip: text; /* recorta o fundo no formato do texto */
+    -webkit-text-fill-color: transparent; /* deixa o preenchimento do texto transparente */
+    display: inline-block; /* ajuda a renderizar corretamente */
+}
+
+
 .bg-card {
     background: rgba(27, 128, 77, 1);
 }
