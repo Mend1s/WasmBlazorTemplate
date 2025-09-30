@@ -1,0 +1,97 @@
+﻿@page "/compliance"
+
+@inject IJSRuntime JS
+<PageTitle>Compliance | Bella Vista Ambiental</PageTitle>
+
+@* VERSÃO DESKTOP *@
+<MudHidden Breakpoint="Breakpoint.SmAndDown">
+    <div class="wrapper-comp d-flex align-center justify-center">
+        <MudContainer MaxWidth="MaxWidth.Large" Class="flex items-center">
+            <MudGrid class="d-flex align-center">
+                <MudItem xs="12" md="6" Class="flex flex-col text-white space-y-4">
+                    <MudText Class="ft-padrao fs-subt-2 pb-7 f-h">
+                        • GOVERNANÇA E SUSTENTABILIDADE
+                    </MudText>
+
+                    <MudText Class="ft-padrao fs-titulo pb-7">
+                        <strong class="f-s-g">Governança e Sustentabilidade</strong><br />Bella Vista
+                    </MudText>
+
+                    <MudText Class="ft-padrao fs-subt-2 pb-7">
+                        Compromisso com ética, transparência e responsabilidade socioambiental em todas as etapas do nosso trabalho.
+                    </MudText>
+                </MudItem>
+
+                <MudItem xs="12" md="6" Style="height:auto;" Class="d-flex justify-center">
+                    <MudImage Src="assets/selo-reconhecimento.png" Fluid ObjectPosition="ObjectPosition.Center" />
+                </MudItem>
+            </MudGrid>
+        </MudContainer>
+    </div>
+</MudHidden>
+
+@* VERSÃO MOBILE *@
+<MudHidden Breakpoint="Breakpoint.MdAndUp">
+    <div class="wrapper-comp-m d-flex align-center justify-center">
+        <MudContainer MaxWidth="MaxWidth.Large" Class="flex items-center">
+            <MudGrid>
+                <MudItem Class="flex flex-col justify-center align-center text-white space-y-4">
+                    <MudText Class="ft-padrao text-center fs-subt-m pb-5 f-h">
+                        • GOVERNANÇA E SUSTENTABILIDADE
+                    </MudText>
+
+                    <MudText Class="ft-padrao text-center fs-titulo-m pb-7">
+                        <strong class="f-s-g">Governança e Sustentabilidade</strong><br />Bella Vista
+                    </MudText>
+
+                    <MudText Class="ft-padrao text-center fs-subt-m pb-7">
+                        Compromisso com ética, transparência e responsabilidade socioambiental em todas as etapas do nosso trabalho.
+                    </MudText>
+                </MudItem>
+            </MudGrid>
+        </MudContainer>
+    </div>
+</MudHidden>
+
+<MudContainer MaxWidth="MaxWidth.Large">
+    <MudDivider />
+</MudContainer>
+
+<div class="reveal">
+    <ProgramaCompliance />
+</div>
+
+<div class="reveal">
+    <NossosValoresCompliance />
+</div>
+
+<div class="reveal">
+    <SustCompliance />
+</div>
+
+<div class="reveal">
+    <EntreContatoCompliance />
+</div>
+
+<Footer />
+
+<style>
+    .wrapper-comp {
+        height: 50vh;
+    }
+
+    .wrapper-comp-m {
+        height: 100%;
+        padding: 30px 0
+    }
+</style>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("initScrollAnimations");
+        }
+    }
+}

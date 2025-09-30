@@ -1,0 +1,63 @@
+﻿@* VERSÃO DESKTOP *@
+<MudHidden Breakpoint="Breakpoint.SmAndDown">
+    <div class="bg-segmento wrapper-cttc d-flex align-center justify-center">
+        <MudContainer MaxWidth="MaxWidth.Large"
+                      Class="h-full flex items-center">
+            <MudText Typo="Typo.h3"
+                     Class="ft-padrao text-center fs-subt-2 pb-7 c-w">
+                • ENTRE EM CONTATO
+            </MudText>
+
+            <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-titulo pb-9 c-w">
+                Junte-se a nós na<br /><strong>transformação sustentável</strong>
+            </MudText>
+
+            <div class="d-flex justify-center">
+                <MudButton Class="bg-btn text-center w-700"
+                           Variant="Variant.Filled"
+                           Color="Color.Success"
+                           Size="Size.Medium"
+                           EndIcon="@Icons.Material.Filled.ArrowOutward">
+                    Fale agora com nossa equipe
+                </MudButton>
+            </div>
+        </MudContainer>
+    </div>
+</MudHidden>
+
+@* VERSÃO MOBILE *@
+<MudHidden Breakpoint="Breakpoint.MdAndUp">
+    <div class="bg-segmento wrapper-cttc-m d-flex align-center justify-center">
+        <MudContainer MaxWidth="MaxWidth.Large"
+                      Class="h-full flex items-center">
+            <MudText Class="ft-padrao text-center fs-subt-m pb-7 c-w">
+                • ENTRE EM CONTATO
+            </MudText>
+
+            <MudText Class="ft-padrao text-center fs-titulo-m pb-9 c-w">
+                Junte-se a nós na<br /><strong>transformação sustentável</strong>
+            </MudText>
+
+            <div class="d-flex justify-center">
+                <MudButton Class="bg-btn text-center w-700"
+                           Variant="Variant.Filled"
+                           Color="Color.Success"
+                           Size="Size.Small"
+                           EndIcon="@Icons.Material.Filled.ArrowOutward">
+                    Fale agora com nossa equipe
+                </MudButton>
+            </div>
+        </MudContainer>
+    </div>
+</MudHidden>
+
+<style>
+    .wrapper-cttc {
+        height: 53.1vh;
+    }
+
+    .wrapper-cttc-m {
+        height: 100%;
+        padding: 30px 0;
+    }
+</style>
