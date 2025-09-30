@@ -1,5 +1,5 @@
 ﻿@* VERSÃO DESKTOP *@
-<MudHidden Breakpoint="Breakpoint.LgAndDown">
+<MudHidden Breakpoint="Breakpoint.SmAndDown">
     <div class="bg-footer d-flex align-center">
         <MudContainer MaxWidth="MaxWidth.Large" Class="h-full flex items-center">
 
@@ -19,8 +19,8 @@
 </MudHidden>
 
 @* VERSÃO MOBILE *@
-<MudHidden Breakpoint="Breakpoint.SmAndUp">
-    <div class="bg-footer d-flex align-center">
+<MudHidden Breakpoint="Breakpoint.MdAndUp">
+    <div class="bg-footer wrapper-f-m d-flex align-center">
         <MudContainer MaxWidth="MaxWidth.Large" Class="h-full flex items-center">
 
             <div class="d-flex justify-center align-center flex-wrap gap-5">
@@ -40,3 +40,14 @@
         </MudContainer>
     </div>
 </MudHidden>
+
+<style>
+    .wrapper-f {
+        height: 74.7vh;
+    }
+
+    .wrapper-f-m {
+        height: 100%;
+        padding: 30px 0
+    }
+</style>

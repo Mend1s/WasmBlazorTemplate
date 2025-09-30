@@ -1,13 +1,12 @@
 ﻿@* VERSÃO DESKTOP *@
-<MudHidden Breakpoint="Breakpoint.LgAndDown">
+<MudHidden Breakpoint="Breakpoint.SmAndDown">
     <div class="wrapper4 d-flex align-center justify-center">
         <MudContainer MaxWidth="MaxWidth.Large">
             <MudGrid>
                 <MudItem xs="12" md="6">
                     <MudImage Src="assets/caminho-itens.png"
-                              Width="555"
-                              Height="510"
                               Class="rounded-lg"
+                              Fluid
                               ObjectPosition="ObjectPosition.Center" />
                 </MudItem>
 
@@ -39,7 +38,7 @@
 </MudHidden>
 
 @* VERSÃO MOBILE *@
-<MudHidden Breakpoint="Breakpoint.SmAndUp">
+<MudHidden Breakpoint="Breakpoint.MdAndUp">
     <div class="wrapper4-m d-flex align-center justify-center">
         <MudContainer MaxWidth="MaxWidth.Large">
             <MudGrid>
@@ -70,7 +69,8 @@
 
 <style>
     .wrapper4 {
-        height: 82.2vh;
+        height: 100%;
+        margin: 35px 0;
     }
 
     .wrapper4-m {

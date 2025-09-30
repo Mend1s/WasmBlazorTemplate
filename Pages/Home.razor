@@ -3,10 +3,10 @@
 <PageTitle>Home</PageTitle>
 
 @* VERSÃO DESKTOP *@
-<MudHidden Breakpoint="Breakpoint.LgAndDown">
+<MudHidden Breakpoint="Breakpoint.SmAndDown">
     <div class="hero-section">
         <div class="hero-overlay">
-            <MudContainer MaxWidth="MaxWidth.Large" Class="h-full flex items-center">
+            <MudContainer MaxWidth="MaxWidth.Medium" Class="h-full flex items-center">
                 <MudGrid>
                     <MudItem xs="12" md="6" Class="flex flex-col justify-center space-y-4">
                         <MudText Typo="Typo.h2" Class="ft-padrao c-w w-400 fs-titulo pb-5">
@@ -29,7 +29,7 @@
 </MudHidden>
 
 @* VERSÃO MOBILE *@
-<MudHidden Breakpoint="Breakpoint.SmAndUp">
+<MudHidden Breakpoint="Breakpoint.MdAndUp">
     <div class="hero-section-m">
         <div class="hero-overlay-m">
             <MudContainer MaxWidth="MaxWidth.Large">
@@ -76,7 +76,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 2rem;
+        /* padding: 2rem; */
     }
 
     .hero-overlay-m {
