@@ -7,12 +7,36 @@
                 <MudImage Src="assets/logo-branco.svg" Width="200" Height="37" ObjectPosition="ObjectPosition.Center" />
 
                 <MudText Class="fs-subt-m c-w">
-                    <strong class="footer-bg">© Copyright 2025 Copfy</strong> | Todos os direitos reservados
+                    <strong class="footer-bg">© Copyright @currentYear Copfy</strong> | Todos os direitos reservados
                 </MudText>
 
-                <MudText Class="fs-subt-m c-w">
-                    <strong class="footer-bg">Siga Nossas Redes:</strong>
-                </MudText>
+                <div class="d-flex justify-space-between align-center">
+                    <MudText Class="fs-subt-m c-w">
+                        <strong class="footer-bg">Siga Nossas Redes:</strong>
+                    </MudText>
+                    <div Class="c-w">
+                        <MudIconButton Icon="@Icons.Custom.Brands.Instagram"
+                                       Color="Color.Inherit"
+                                       Target="_blank"
+                                       Href="https://www.instagram.com/bellavista.ambiental/"
+                                       Size="Size.Small"
+                                       Class="" />
+
+                        <MudIconButton Icon="@Icons.Custom.Brands.Facebook"
+                                       Color="Color.Inherit"
+                                       Target="_blank"
+                                       Href="https://www.facebook.com/bellavista.ambiental/"
+                                       Size="Size.Small"
+                                       Class="" />
+
+                        <MudIconButton Icon="@Icons.Custom.Brands.LinkedIn"
+                                       Color="Color.Inherit"
+                                       Target="_blank"
+                                       Href="https://www.linkedin.com/company/bella-vista-ambiental/"
+                                       Size="Size.Small"
+                                       Class="" />
+                    </div>
+                </div>
             </div>
         </MudContainer>
     </div>
@@ -30,12 +54,35 @@
                           ObjectPosition="ObjectPosition.Center" />
 
                 <MudText Class="fs-subt-m c-w">
-                    <strong class="footer-bg">© Copyright 2025 Copfy</strong> | Todos os direitos reservados
+                    <strong class="footer-bg">© Copyright @currentYear Copfy</strong> | Todos os direitos reservados
                 </MudText>
 
                 <MudText Class="fs-subt-m c-w">
                     <strong class="footer-bg">Siga Nossas Redes:</strong>
                 </MudText>
+
+                <div Class="c-w">
+                    <MudIconButton Icon="@Icons.Custom.Brands.Instagram"
+                                   Color="Color.Inherit"
+                                   Target="_blank"
+                                   Href="https://www.instagram.com/bellavista.ambiental/"
+                                   Size="Size.Small"
+                                   Class="" />
+
+                    <MudIconButton Icon="@Icons.Custom.Brands.Facebook"
+                                   Color="Color.Inherit"
+                                   Target="_blank"
+                                   Href="https://www.facebook.com/bellavista.ambiental/"
+                                   Size="Size.Small"
+                                   Class="" />
+
+                    <MudIconButton Icon="@Icons.Custom.Brands.LinkedIn"
+                                   Color="Color.Inherit"
+                                   Target="_blank"
+                                   Href="https://www.linkedin.com/company/bella-vista-ambiental/"
+                                   Size="Size.Small"
+                                   Class="" />
+                </div>
             </div>
         </MudContainer>
     </div>
@@ -51,3 +98,8 @@
         padding: 30px 0
     }
 </style>
+
+
+@code {
+    private int currentYear = DateTime.Now.Year;
+}

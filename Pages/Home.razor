@@ -1,12 +1,13 @@
 ﻿@page "/"
 
+@inject IJSRuntime JS
 <PageTitle>Home</PageTitle>
 
 @* VERSÃO DESKTOP *@
 <MudHidden Breakpoint="Breakpoint.SmAndDown">
     <div class="hero-section">
         <div class="hero-overlay">
-            <MudContainer MaxWidth="MaxWidth.Medium" Class="h-full flex items-center">
+            <MudContainer MaxWidth="MaxWidth.Large" Class="h-full flex items-center">
                 <MudGrid>
                     <MudItem xs="12" md="6" Class="flex flex-col justify-center space-y-4">
                         <MudText Typo="Typo.h2" Class="ft-padrao c-w w-400 fs-titulo pb-5">
@@ -88,11 +89,38 @@
         justify-content: center;
     }
 </style>
-<GestaoSustentavel />
-<Weather />
-<SolucoesSegmento />
-<ResiduosValor />
-<Clientes />
-<ProjetosMidia />
-<EntreContato />
-<Footer />
+<div class="reveal">
+    <GestaoSustentavel />
+</div>
+
+<div class="reveal">
+    <Weather />
+</div>
+<div class="reveal">
+    <SolucoesSegmento />
+</div>
+<div class="reveal">
+    <ResiduosValor />
+</div>
+<div class="reveal">
+    <Clientes />
+</div>
+<div class="reveal">
+    <ProjetosMidia />
+</div>
+<div class="reveal">
+    <EntreContato />
+</div>
+<div class="reveal">
+    <Footer />
+</div>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("initScrollAnimations");
+        }
+    }
+}
