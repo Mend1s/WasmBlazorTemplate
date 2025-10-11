@@ -1,0 +1,122 @@
+﻿@page "/entre-contato"
+@using System.ComponentModel.DataAnnotations
+
+@inject IJSRuntime JS
+<PageTitle>Entre em Contato | Bella Vista Ambiental</PageTitle>
+
+@* VERSÃO DESKTOP *@
+<MudHidden Breakpoint="Breakpoint.SmAndDown">
+    <div class="wrapper-entctt d-flex align-center justify-center">
+        <MudContainer MaxWidth="MaxWidth.Large" Class="flex items-center">
+            <MudGrid class="d-flex align-center">
+                <MudItem xs="12" md="6" Class="flex flex-col text-white space-y-4">
+                    <MudText Class="ft-padrao fs-subt-2 pb-7 f-h">
+                        • SOLICITE UM ORÇAMENTO
+                    </MudText>
+
+                    <MudText Class="ft-padrao fs-titulo pb-7">
+                        Entre em contato <br />
+                        com a <strong class="f-s-g">Bella Vista Ambiental</strong>
+                    </MudText>
+
+                    <MudText Class="ft-padrao fs-subt-2 pb-7">
+                        <strong>Na Bella Vista Ambiental, cada cliente recebe um atendimento personalizado.</strong> Seja para tirar dúvidas, solicitar uma proposta ou entender como podemos apoiar sua operação, nosso time está à disposição para oferecer a solução ideal.
+                    </MudText>
+
+                    <div class="d-flex align-center gap-5 mb-3">
+                        <MudImage Src="assets/wpp-ctt.png" />
+                        <MudText class="w-700 f-h">(15) 98822-3121</MudText>
+                    </div>
+
+                    <div class="d-flex align-center gap-5 mb-3">
+                        <MudImage Src="assets/email-ctt.png" />
+                        <MudText class="w-700 f-h">contato@bellavistaambiental.com.br</MudText>
+                    </div>
+
+                    <div class="d-flex align-center gap-5">
+                        <MudImage Src="assets/location-ctt.png" />
+                        <MudText class="w-700 f-h">
+                            Avenida Doutor Antônio de Luna
+                            s/n - Jardim Lagoa Nova - Limeira/SP
+                        </MudText>
+                    </div>
+                </MudItem>
+
+                <MudItem xs="12"
+                         md="6"
+                         Class="d-flex justify-center">
+                    <MudForm @ref="form"
+                             @bind-IsValid="@success"
+                             @bind-Errors="@errors"
+                             style="width: 100%;">
+                        <MudTextField Variant="Variant.Filled"
+                                      T="string"
+                                      Label="Seu nome"
+                                      class="mb-5 rounded"
+                                      Required="true"
+                                      RequiredError="Seu nome é obrigatório!" />
+
+                        <MudTextField T="string"
+                                      Label="E-mail"
+                                      Required="true"
+                                      Variant="Variant.Filled"
+                                      class="mb-5 rounded"
+                                      InputType="InputType.Email"
+                                      RequiredError="E-mail é obrigatório!"
+                                      Validation="@(new EmailAddressAttribute() {ErrorMessage = "O e-mail é inválido!"})" />
+
+                        <MudTextField T="string"
+                                      Label="Telefone"
+                                      Required="true"
+                                      Variant="Variant.Filled"
+                                      Class="mb-5 rounded"
+                                      Mask="@(new PatternMask("00 00000 0000"))"
+                                      RequiredError="Telefone é obrigatório!"
+                                      Validation="@(new PhoneAttribute() { ErrorMessage = "O telefone é inválido!" })" />
+
+                        <MudTextField Variant="Variant.Filled"
+                                      T="string"
+                                      Label="Cidade"
+                                      class="mb-5 rounded"
+                                      InputType="InputType.Text"
+                                      Required="true"
+                                      RequiredError="O campo cidade é obrigatório!" />
+
+                        <MudTextField T="string"
+                                      Label="Sua mensagem"                                      
+                                      Variant="Variant.Filled"
+                                      Text="@sampleText"
+                                      Lines="3" />
+
+                        <div class="d-flex align-center justify-space-between">
+                            <MudButton Variant="Variant.Filled"
+                                       Color="Color.Primary"
+                                       Disabled="@(!success)"
+                                       Class="ml-auto">Register</MudButton>
+                        </div>
+                    </MudForm>
+                </MudItem>
+            </MudGrid>
+        </MudContainer>
+    </div>
+</MudHidden>
+
+<Footer />
+
+<style>
+    .wrapper-entctt {
+        height: 78vh;
+    }
+
+    .wrapper-entctt-m {
+        height: 100%;
+        padding: 30px 0
+    }
+</style>
+
+@code {
+    MudForm form;
+    bool success;
+    string sampleText;
+    string[] errors = { };
+}
