@@ -49,9 +49,10 @@
                              @bind-IsValid="@success"
                              @bind-Errors="@errors"
                              style="width: 100%;">
-                        <MudTextField Variant="Variant.Filled"
+                        <MudTextField Variant="Variant.Outlined"
                                       T="string"
                                       Label="Seu nome"
+                                      @bind-Value="contactModel.Name"
                                       class="mb-5 rounded"
                                       Required="true"
                                       RequiredError="Seu nome é obrigatório!" />
@@ -59,41 +60,54 @@
                         <MudTextField T="string"
                                       Label="E-mail"
                                       Required="true"
-                                      Variant="Variant.Filled"
+                                      @bind-Value="contactModel.Email"
+                                      Variant="Variant.Outlined"
                                       class="mb-5 rounded"
                                       InputType="InputType.Email"
                                       RequiredError="E-mail é obrigatório!"
                                       Validation="@(new EmailAddressAttribute() {ErrorMessage = "O e-mail é inválido!"})" />
 
-                        <MudTextField T="string"
-                                      Label="Telefone"
-                                      Required="true"
-                                      Variant="Variant.Filled"
-                                      Class="mb-5 rounded"
-                                      Mask="@(new PatternMask("00 00000 0000"))"
-                                      RequiredError="Telefone é obrigatório!"
-                                      Validation="@(new PhoneAttribute() { ErrorMessage = "O telefone é inválido!" })" />
+                        <MudGrid>
+                            <MudItem xs="12" sm="6">
+                                <MudTextField T="string"
+                                              Label="Telefone"
+                                              Required="true"
+                                              @bind-Value="contactModel.Phone"
+                                              Variant="Variant.Outlined"
+                                              Class="mb-5 rounded"
+                                              Mask="@(new PatternMask("00 00000 0000"))"
+                                              RequiredError="Telefone é obrigatório!"
+                                              Validation="@(new PhoneAttribute() { ErrorMessage = "O telefone é inválido!" })" />
+                            </MudItem>
 
-                        <MudTextField Variant="Variant.Filled"
-                                      T="string"
-                                      Label="Cidade"
-                                      class="mb-5 rounded"
-                                      InputType="InputType.Text"
-                                      Required="true"
-                                      RequiredError="O campo cidade é obrigatório!" />
+                            <MudItem xs="12" sm="6">
+                                <MudTextField Variant="Variant.Outlined"
+                                              T="string"
+                                              Label="Cidade"
+                                              @bind-Value="contactModel.City"
+                                              class="mb-5 rounded"
+                                              InputType="InputType.Text"
+                                              Required="true"
+                                              RequiredError="O campo cidade é obrigatório!" />
+                            </MudItem>
 
+                        </MudGrid>
                         <MudTextField T="string"
-                                      Label="Sua mensagem"                                      
-                                      Variant="Variant.Filled"
-                                      Text="@sampleText"
+                                      Label="Sua mensagem"
+                                      @bind-Value="contactModel.Message"
+                                      Class="mb-5"
+                                      Variant="Variant.Outlined"
                                       Lines="3" />
-
-                        <div class="d-flex align-center justify-space-between">
-                            <MudButton Variant="Variant.Filled"
-                                       Color="Color.Primary"
-                                       Disabled="@(!success)"
-                                       Class="ml-auto">Register</MudButton>
-                        </div>
+                        
+                        <MudButton Class="bg-btn w-700"
+                                   DropShadow="false"
+                                   OnClick="HandleSubmit"
+                                   Variant="Variant.Filled"
+                                   Color="Color.Success"                                   
+                                   Size="Size.Medium"
+                                   EndIcon="@Icons.Material.Filled.ArrowOutward">
+                            Enviar mensagem
+                        </MudButton>
                     </MudForm>
                 </MudItem>
             </MudGrid>
@@ -117,6 +131,35 @@
 @code {
     MudForm form;
     bool success;
-    string sampleText;
     string[] errors = { };
+
+    private ContactFormModel contactModel = new();
+
+    public class ContactFormModel
+    {
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
+        public string City { get; set; }
+        public string Message { get; set; }
+    }
+
+    private async Task HandleSubmit()
+    {
+        await form.Validate();
+
+        if (form.IsValid)
+        {
+            Console.WriteLine("✅ Formulário válido!");
+            Console.WriteLine($"Nome: {contactModel.Name}");
+            Console.WriteLine($"Email: {contactModel.Email}");
+            Console.WriteLine($"Telefone: {contactModel.Phone}");
+            Console.WriteLine($"Cidade: {contactModel.City}");
+            Console.WriteLine($"Mensagem: {contactModel.Message}");
+        }
+        else
+        {
+            Console.WriteLine("⚠️ Formulário inválido. Corrija os erros e tente novamente.");
+        }
+    }
 }
