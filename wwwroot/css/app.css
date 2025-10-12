@@ -10,6 +10,10 @@ html, body {
     background: red;
 }
 
+.br-1 {
+    border-radius: 8px !important;
+}
+
 .bg-footer {
     background: rgba(10, 91, 95, 1);
     height: 15vh;
