@@ -7,7 +7,7 @@
             </MudText>
 
             <div style="width: 585px; margin: 0 auto;" class="mb-5">
-                <MudText Class="ft-padrao text-center fs-subt-m pb-9 f-h">
+                <MudText Class="ft-padrao text-center fs-subt-m pb-9 f-h3">
                     Na Bella Vista Ambiental, cada etapa da operação está alinhada às práticas de Environmental, Social e Governance (ESG). Isso significa unir inovação, sustentabilidade e responsabilidade para gerar valor não apenas para nossos clientes, mas também para a sociedade e o meio ambiente.
                 </MudText>
             </div>
@@ -29,15 +29,23 @@
                 Nossos compromissos <strong class="f-s-g">ESG</strong>
             </MudText>
 
-            <MudText Class="ft-padrao text-center fs-subt-m pb-9 f-h">
+            <MudText Class="ft-padrao text-center fs-subt-m pb-9 f-h3">
                 Na Bella Vista Ambiental, cada etapa da operação está alinhada às práticas de Environmental, Social e Governance (ESG). Isso significa unir inovação, sustentabilidade e responsabilidade para gerar valor não apenas para nossos clientes, mas também para a sociedade e o meio ambiente.
             </MudText>
 
-            <div Class="d-flex justify-center align-center flex-wrap gap-6">
-                <MudImage Src="assets/esg-1.png" Fluid ObjectPosition="ObjectPosition.Center" />
-                <MudImage Src="assets/esg-2.png" Fluid ObjectPosition="ObjectPosition.Center" />
-                <MudImage Src="assets/esg-3.png" Fluid ObjectPosition="ObjectPosition.Center" />
-            </div>
+            @* <div Class="d-flex justify-center align-center flex-wrap gap-6"> *@
+            <MudGrid Justify="Justify.Center">
+                <MudItem xs="6">
+                    <MudImage Src="assets/esg-1.png" Fluid ObjectPosition="ObjectPosition.Center" />
+                </MudItem>
+                <MudItem xs="6">
+                    <MudImage Src="assets/esg-2.png" Fluid ObjectPosition="ObjectPosition.Center" />
+                </MudItem>
+                <MudItem xs="6">
+                    <MudImage Src="assets/esg-3.png" Fluid ObjectPosition="ObjectPosition.Center" />
+                </MudItem>
+            </MudGrid>
+            @* </div> *@
         </MudContainer>
     </div>
 </MudHidden>
@@ -46,6 +54,7 @@
     .wrapper-qms-esg {
         height: 50vh;
         margin: 30px 0;
+        color: rgba(39, 39, 39, 1);
     }
 
     .wrapper-qms-esg-m {

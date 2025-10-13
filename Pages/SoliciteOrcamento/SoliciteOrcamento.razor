@@ -45,7 +45,20 @@
                 <MudItem xs="12"
                          md="6"
                          Class="d-flex justify-center">
-                    <MudForm @ref="form"
+                    <form action="https://formspree.io/f/mpwyopwy"
+                          method="POST">
+                        <label>
+                            Your email:
+                            <input type="email" name="email">
+                        </label>
+                        <label>
+                            Your message:
+                            <textarea name="message"></textarea>
+                        </label>
+                        <!-- your other form fields go here -->
+                        <button type="submit">Send</button>
+                    </form>
+                    @* <MudForm @ref="form"                        
                              @bind-IsValid="@success"
                              @bind-Errors="@errors"
                              style="width: 100%;">
@@ -98,7 +111,7 @@
                                       Class="mb-5"
                                       Variant="Variant.Outlined"
                                       Lines="3" />
-                        
+
                         <MudButton Class="bg-btn w-700"
                                    DropShadow="false"
                                    OnClick="HandleSubmit"
@@ -108,7 +121,7 @@
                                    EndIcon="@Icons.Material.Filled.ArrowOutward">
                             Enviar mensagem
                         </MudButton>
-                    </MudForm>
+                    </MudForm> *@
                 </MudItem>
             </MudGrid>
         </MudContainer>

@@ -17,6 +17,9 @@
     display: inline-block; /* ajuda a renderizar corretamente */
 }
 
+f-h3 {
+    color: rgba(39, 39, 39, 1);
+}
 
 .bg-card {
     background: rgba(27, 128, 77, 1);
