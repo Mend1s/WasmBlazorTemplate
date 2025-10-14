@@ -1,7 +1,23 @@
-﻿<div class="d-flex justify-center align-center" style="margin-left: 0 !important;">
-    <MudNavLink Match="NavLinkMatch.All" style="margin-left: 0;" href="/">Home</MudNavLink>
-    <MudNavLink href="quem-somos" style="white-space: nowrap; margin-left: 0;">Quem somos</MudNavLink>
-    <MudNavLink style="margin-left: 0;" href="compliance">Compliance</MudNavLink>
-    <MudNavLink style="margin-left: 0;" href="servicos">Serviços</MudNavLink>
-    <MudNavLink style="margin-left: 0;" href="news">News</MudNavLink>
+﻿<div class="d-flex justify-start align-center">
+    <MudNavLink ActiveClass="teste" Match="NavLinkMatch.All" style="margin-left: 0; padding: 0" href="/">Home</MudNavLink>
+    <MudNavLink ActiveClass="teste" href="quem-somos" style="white-space: nowrap; margin-left: 0;">Quem somos</MudNavLink>
+    <MudNavLink ActiveClass="teste" href="compliance">Compliance</MudNavLink>
+    <MudNavLink ActiveClass="teste" href="servicos">Serviços</MudNavLink>
+    @* <MudNavLink style="margin-left: 0;" href="news">News</MudNavLink> *@
 </div>
+
+<style>
+    .teste {
+        border-bottom: 2px solid #7ed957; /* verde da identidade visual */
+    }
+
+    .mud-nav-link {
+        background-color: transparent !important;
+    }
+
+    .mud-nav-link .mud-nav-link-text {
+        margin-left: 0px;
+        border-radius: 8px;
+    }
+
+</style>
