@@ -37,3 +37,7 @@ f-h3 {
 .footer-bg {
     color: rgba(137, 187, 72, 1);
 }
+
+.bg-avatar {
+    background: linear-gradient(87.76deg, #1B804D 4.32%, #89BB48 103.03%);
+}
