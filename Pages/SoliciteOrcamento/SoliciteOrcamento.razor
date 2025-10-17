@@ -47,16 +47,38 @@
                          Class="d-flex justify-center">
                     <form action="https://formspree.io/f/mpwyopwy"
                           method="POST">
-                        <label>
-                            Your email:
-                            <input type="email" name="email">
-                        </label>
-                        <label>
-                            Your message:
-                            <textarea name="message"></textarea>
-                        </label>
-                        <!-- your other form fields go here -->
-                        <button type="submit">Send</button>
+                        <label for="name">Seu nome*</label>
+                        <input type="text" id="name" name="name" required style="width: 100%; background: rgba(217, 217, 217, 1); padding: 10px; border-radius: 8px; margin-bottom: 15px;">
+
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" required style="width: 100%; background: rgba(217, 217, 217, 1); padding: 10px; border-radius: 8px; margin-bottom: 15px;">
+
+                        <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                            <div style="flex: 1;">
+                                <label for="phone">Telefone*</label>
+                                <input type="tel" id="phone" name="phone" required style="width: 100%; background: rgba(217, 217, 217, 1); padding: 10px; border-radius: 8px;">
+                            </div>
+
+                            <div style="flex: 1;">
+                                <label for="city">Cidade</label>
+                                <input type="text" id="city" name="city" style="width: 100%; background: rgba(217, 217, 217, 1); padding: 10px; border-radius: 8px;">
+                            </div>
+                        </div>
+
+                        <label for="message">Sua mensagem*</label>
+                        <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px; border-radius: 8px;background: rgba(217, 217, 217, 1); resize: none;"></textarea>
+                        @* <button Class="bg-btn w-700" type="submit">Send</button> *@
+                        <MudButton Class="bg-btn mt-4 w-700"
+                                   DropShadow="false"
+                                   FullWidth
+                                   ButtonType="ButtonType.Submit"
+                                   OnClick="HandleSubmit"
+                                   Variant="Variant.Filled"
+                                   Color="Color.Success"
+                                   Size="Size.Medium"
+                                   EndIcon="@Icons.Material.Filled.ArrowOutward">
+                            Enviar mensagem
+                        </MudButton>
                     </form>
                     @* <MudForm @ref="form"                        
                              @bind-IsValid="@success"
