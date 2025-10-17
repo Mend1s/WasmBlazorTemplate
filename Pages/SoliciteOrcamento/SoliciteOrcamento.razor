@@ -45,37 +45,34 @@
                 <MudItem xs="12"
                          md="6"
                          Class="d-flex justify-center">
-                    <form action="https://formspree.io/f/mpwyopwy"
-                          method="POST">
+                    <form @onsubmit="HandleSubmit" @onsubmit:preventDefault>
                         <label for="name">Seu nome*</label>
-                        <input type="text" id="name" name="name" required style="width: 100%; background: rgba(217, 217, 217, 1); padding: 10px; border-radius: 8px; margin-bottom: 15px;">
+                        <input type="text" id="name" @bind="name" required style="width:100%; background:#D9D9D9; padding:10px; border-radius:8px; margin-bottom:15px;" />
 
                         <label for="email">Email*</label>
-                        <input type="email" id="email" name="email" required style="width: 100%; background: rgba(217, 217, 217, 1); padding: 10px; border-radius: 8px; margin-bottom: 15px;">
+                        <input type="email" id="email" @bind="email" required style="width:100%; background:#D9D9D9; padding:10px; border-radius:8px; margin-bottom:15px;" />
 
-                        <div style="display: flex; gap: 10px; margin-bottom: 15px;">
-                            <div style="flex: 1;">
+                        <div style="display:flex; gap:10px; margin-bottom:15px;">
+                            <div style="flex:1;">
                                 <label for="phone">Telefone*</label>
-                                <input type="tel" id="phone" name="phone" required style="width: 100%; background: rgba(217, 217, 217, 1); padding: 10px; border-radius: 8px;">
+                                <input type="tel" id="phone" @bind="phone" required style="width:100%; background:#D9D9D9; padding:10px; border-radius:8px;" />
                             </div>
-
-                            <div style="flex: 1;">
+                            <div style="flex:1;">
                                 <label for="city">Cidade</label>
-                                <input type="text" id="city" name="city" style="width: 100%; background: rgba(217, 217, 217, 1); padding: 10px; border-radius: 8px;">
+                                <input type="text" id="city" @bind="city" style="width:100%; background:#D9D9D9; padding:10px; border-radius:8px;" />
                             </div>
                         </div>
 
                         <label for="message">Sua mensagem*</label>
-                        <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px; border-radius: 8px;background: rgba(217, 217, 217, 1); resize: none;"></textarea>
-                        @* <button Class="bg-btn w-700" type="submit">Send</button> *@
+                        <textarea id="message" @bind="message" rows="5" required style="width:100%; background:#D9D9D9; padding:10px; border-radius:8px; resize:none;"></textarea>
+
                         <MudButton Class="bg-btn mt-4 w-700"
                                    DropShadow="false"
                                    FullWidth
-                                   ButtonType="ButtonType.Submit"
-                                   OnClick="HandleSubmit"
                                    Variant="Variant.Filled"
                                    Color="Color.Success"
                                    Size="Size.Medium"
+                                   OnClick="HandleSubmit"
                                    EndIcon="@Icons.Material.Filled.ArrowOutward">
                             Enviar mensagem
                         </MudButton>
@@ -168,33 +165,66 @@
     bool success;
     string[] errors = { };
 
-    private ContactFormModel contactModel = new();
+    private string name;
+    private string email;
+    private string phone;
+    private string city;
+    private string message;
 
-    public class ContactFormModel
-    {
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public string Phone { get; set; }
-        public string City { get; set; }
-        public string Message { get; set; }
-    }
+    // private ContactFormModel contactModel = new();
+
+    // public class ContactFormModel
+    // {
+    //     public string Name { get; set; }
+    //     public string Email { get; set; }
+    //     public string Phone { get; set; }
+    //     public string City { get; set; }
+    //     public string Message { get; set; }
+    // }
+
+    // private async Task HandleSubmit()
+    // {
+    //     await form.Validate();
+
+    //     if (form.IsValid)
+    //     {
+    //         Console.WriteLine("✅ Formulário válido!");
+    //         Console.WriteLine($"Nome: {contactModel.Name}");
+    //         Console.WriteLine($"Email: {contactModel.Email}");
+    //         Console.WriteLine($"Telefone: {contactModel.Phone}");
+    //         Console.WriteLine($"Cidade: {contactModel.City}");
+    //         Console.WriteLine($"Mensagem: {contactModel.Message}");
+    //     }
+    //     else
+    //     {
+    //         Console.WriteLine("⚠️ Formulário inválido. Corrija os erros e tente novamente.");
+    //     }
+    // }
 
     private async Task HandleSubmit()
     {
-        await form.Validate();
-
-        if (form.IsValid)
+        var formData = new Dictionary<string, object>
         {
-            Console.WriteLine("✅ Formulário válido!");
-            Console.WriteLine($"Nome: {contactModel.Name}");
-            Console.WriteLine($"Email: {contactModel.Email}");
-            Console.WriteLine($"Telefone: {contactModel.Phone}");
-            Console.WriteLine($"Cidade: {contactModel.City}");
-            Console.WriteLine($"Mensagem: {contactModel.Message}");
+            { "name", name },
+            { "email", email },
+            { "phone", phone },
+            { "city", city },
+            { "message", message }
+        };
+
+        var success = await JS.InvokeAsync<bool>("SendForms",
+            "service_cjafxeh",
+            "template_l2xgjyd",
+            formData);
+
+        if (success)
+        {
+            await JS.InvokeVoidAsync("alert", "✅ Mensagem enviada com sucesso!");
+            name = email = phone = city = message = string.Empty;
         }
         else
         {
-            Console.WriteLine("⚠️ Formulário inválido. Corrija os erros e tente novamente.");
+            await JS.InvokeVoidAsync("alert", "❌ Erro ao enviar mensagem. Tente novamente.");
         }
     }
 }

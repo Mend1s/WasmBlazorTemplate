@@ -30,9 +30,22 @@
         <a href="." class="reload">Regarregar</a>
         <span class="dismiss">🗙</span>
     </div>
+
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("efw0wKaDRYc1RONHB"); // substitua pela sua public key
+        })();
+    </script>
+
+    <script src="js/SendForms.js"></script>  <!-- ✅ seu script aqui -->
+
     <script src="_framework/blazor.webassembly.js"></script>
+
     <script src="js/scrollAnimations.js"></script>
     <script src="_content/MudBlazor/MudBlazor.min.js"></script>
+
 </body>
 
 </html>
