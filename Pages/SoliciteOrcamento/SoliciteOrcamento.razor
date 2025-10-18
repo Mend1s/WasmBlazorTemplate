@@ -147,6 +147,148 @@
     </div>
 </MudHidden>
 
+@* VERSÃO MOBILE *@
+<MudHidden Breakpoint="Breakpoint.MdAndUp">
+    <div class="wrapper-entctt d-flex align-center justify-center">
+        <MudContainer MaxWidth="MaxWidth.Large" Class="flex items-center">
+            <MudGrid class="d-flex align-center">
+                <MudItem xs="12" md="6" Class="flex flex-col text-white space-y-4">
+                    <MudText Class="ft-padrao fs-subt-m text-center pb-4 f-h">
+                        • SOLICITE UM ORÇAMENTO
+                    </MudText>
+
+                    <MudText Class="ft-padrao text-center fs-titulo-m pb-4">
+                        Entre em contato com a <br /><strong class="f-s-g">Bella Vista Ambiental</strong>
+                    </MudText>
+
+                    <MudText Class="ft-padrao text-center fs-subt-m pb-7">
+                        <strong>Na Bella Vista Ambiental, cada cliente recebe um atendimento personalizado.</strong> Seja para tirar dúvidas, solicitar uma proposta ou entender como podemos apoiar sua operação, nosso time está à disposição para oferecer a solução ideal.
+                    </MudText>
+
+                    <div class="d-flex align-center justify-center gap-5 mb-2">
+                        <MudImage Src="assets/wpp-ctt.png" Width="16" Height="16" />
+                        <MudText class="w-700 fs-subt-m ft-padrao f-h">(15) 98822-3121</MudText>
+                    </div>
+
+                    <div class="d-flex align-center justify-center gap-1 mb-2">
+                        <MudImage Src="assets/email-ctt.png" Width="16" Height="16" />
+                        <MudText class="w-700 fs-subt-m ft-padrao f-h">contato@bellavistaambiental.com.br</MudText>
+                    </div>
+
+                    <div class="d-flex align-center justify-center gap-1">
+                        <MudImage Src="assets/location-ctt.png" Width="16" Height="16" />
+                        <MudText class="w-700 fs-subt-m ft-padrao f-h">
+                            Avenida Doutor Antônio de Luna<br />
+                            s/n - Jardim Lagoa Nova - Limeira/SP
+                        </MudText>
+                    </div>
+                </MudItem>
+
+                <MudItem xs="12"
+                         md="6"
+                         Class="d-flex justify-center">
+                    <form @onsubmit="HandleSubmit" @onsubmit:preventDefault>
+                        <label for="name" class="ft-padrao fs-subt-m">Seu nome*</label>
+                        <input type="text" id="name" @bind="name" required style="width:100%; background:#D9D9D9; padding:10px; border-radius:8px; margin-bottom:15px;" />
+
+                        <label for="email" class="ft-padrao fs-subt-m">Email*</label>
+                        <input type="email" id="email" @bind="email" required style="width:100%; background:#D9D9D9; padding:10px; border-radius:8px; margin-bottom:15px;" />
+
+                        <div style="display:flex; gap:10px; margin-bottom:15px;">
+                            <div style="flex:1;">
+                                <label for="phone" class="ft-padrao fs-subt-m">Telefone*</label>
+                                <input type="tel" id="phone" @bind="phone" required style="width:100%; background:#D9D9D9; padding:10px; border-radius:8px;" />
+                            </div>
+                            <div style="flex:1;">
+                                <label for="city" class="ft-padrao fs-subt-m">Cidade</label>
+                                <input type="text" id="city" @bind="city" style="width:100%; background:#D9D9D9; padding:10px; border-radius:8px;" />
+                            </div>
+                        </div>
+
+                        <label for="message" class="ft-padrao fs-subt-m">Sua mensagem*</label>
+                        <textarea id="message" @bind="message" rows="3" required style="width:100%; background:#D9D9D9; padding:10px; border-radius:8px; resize:none;"></textarea>
+
+                        <MudButton Class="bg-btn mt-4 w-700"
+                                   DropShadow="false"
+                                   FullWidth
+                                   Variant="Variant.Filled"
+                                   Color="Color.Success"
+                                   Size="Size.Medium"
+                                   OnClick="HandleSubmit"
+                                   EndIcon="@Icons.Material.Filled.ArrowOutward">
+                            Enviar mensagem
+                        </MudButton>
+                    </form>
+                    @* <MudForm @ref="form"                        
+                             @bind-IsValid="@success"
+                             @bind-Errors="@errors"
+                             style="width: 100%;">
+                        <MudTextField Variant="Variant.Outlined"
+                                      T="string"
+                                      Label="Seu nome"
+                                      @bind-Value="contactModel.Name"
+                                      class="mb-5 rounded"
+                                      Required="true"
+                                      RequiredError="Seu nome é obrigatório!" />
+
+                        <MudTextField T="string"
+                                      Label="E-mail"
+                                      Required="true"
+                                      @bind-Value="contactModel.Email"
+                                      Variant="Variant.Outlined"
+                                      class="mb-5 rounded"
+                                      InputType="InputType.Email"
+                                      RequiredError="E-mail é obrigatório!"
+                                      Validation="@(new EmailAddressAttribute() {ErrorMessage = "O e-mail é inválido!"})" />
+
+                        <MudGrid>
+                            <MudItem xs="12" sm="6">
+                                <MudTextField T="string"
+                                              Label="Telefone"
+                                              Required="true"
+                                              @bind-Value="contactModel.Phone"
+                                              Variant="Variant.Outlined"
+                                              Class="mb-5 rounded"
+                                              Mask="@(new PatternMask("00 00000 0000"))"
+                                              RequiredError="Telefone é obrigatório!"
+                                              Validation="@(new PhoneAttribute() { ErrorMessage = "O telefone é inválido!" })" />
+                            </MudItem>
+
+                            <MudItem xs="12" sm="6">
+                                <MudTextField Variant="Variant.Outlined"
+                                              T="string"
+                                              Label="Cidade"
+                                              @bind-Value="contactModel.City"
+                                              class="mb-5 rounded"
+                                              InputType="InputType.Text"
+                                              Required="true"
+                                              RequiredError="O campo cidade é obrigatório!" />
+                            </MudItem>
+
+                        </MudGrid>
+                        <MudTextField T="string"
+                                      Label="Sua mensagem"
+                                      @bind-Value="contactModel.Message"
+                                      Class="mb-5"
+                                      Variant="Variant.Outlined"
+                                      Lines="3" />
+
+                        <MudButton Class="bg-btn w-700"
+                                   DropShadow="false"
+                                   OnClick="HandleSubmit"
+                                   Variant="Variant.Filled"
+                                   Color="Color.Success"                                   
+                                   Size="Size.Medium"
+                                   EndIcon="@Icons.Material.Filled.ArrowOutward">
+                            Enviar mensagem
+                        </MudButton>
+                    </MudForm> *@
+                </MudItem>
+            </MudGrid>
+        </MudContainer>
+    </div>
+</MudHidden>
+
 <Footer />
 
 <style>
@@ -213,8 +355,6 @@
         };
 
         var success = await JS.InvokeAsync<bool>("SendForms",
-            "service_cjafxeh",
-            "template_l2xgjyd",
             formData);
 
         if (success)

@@ -7,7 +7,7 @@ html, body {
 }
 
 .bg {
-    background: red;
+    background: red !important;
 }
 
 .br-1 {

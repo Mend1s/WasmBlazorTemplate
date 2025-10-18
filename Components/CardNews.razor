@@ -1,0 +1,69 @@
+﻿@* VERSÃO DESKTOP *@
+<MudHidden Breakpoint="Breakpoint.SmAndDown">
+    <MudGrid class="d-flex align-center mt-9 mb-9">
+        <MudItem xs="12" md="5" Class="d-flex justify-center">
+            <MudImage Src="@Capa" Height="320" Width="500" Fluid ObjectPosition="ObjectPosition.Center" ObjectFit="ObjectFit.Cover" />
+        </MudItem>
+        <MudItem xs="12" md="7" Class="flex flex-col text-white space-y-4">
+            <MudText Typo="Typo.h3" Class="ft-padrao f-s-g w-700 fs-subt pb-7">
+                @Titulo
+            </MudText>
+
+            <MudText Typo="Typo.body1" Class="ft-padrao fs-subt-2 pb-4">
+                @Descricao
+            </MudText>
+
+            <MudButton Class="fs-subt-2 f-h ft-padrao"
+                       Style="margin-left: -7px"
+                       Href="@($"/news-detalhes/{Id}")"
+                       Target="_blank"
+                       EndIcon="@Icons.Material.Filled.ArrowOutward"
+                       Size="Size.Medium">
+                LEIA MAIS
+            </MudButton>
+
+        </MudItem>
+    </MudGrid>
+</MudHidden>
+
+@* VERSÃO MOBILE *@
+<MudHidden Breakpoint="Breakpoint.MdAndUp">
+    <MudGrid class="d-flex align-center mt-2 mb-2">
+        <MudItem xs="12" md="5" Class="d-flex justify-center">
+            <MudImage Src="@Capa" Height="320" Width="500" Fluid ObjectPosition="ObjectPosition.Center" ObjectFit="ObjectFit.Cover" />
+        </MudItem>
+        <MudItem xs="12" md="7" Class="flex flex-col text-white">
+            <MudText Typo="Typo.h3" Class="ft-padrao f-s-g w-700 fs-subt-2 pb-2">
+                @Titulo
+            </MudText>
+
+            <MudText Typo="Typo.body1" Class="ft-padrao fs-subt-m pb-2">
+                @Descricao
+            </MudText>
+
+            <MudButton Class="fs-subt-m f-h ft-padrao"
+                       Style="margin-left: -7px"
+                       Href="@($"/news-detalhes/{Id}")"
+                       Target="_blank"
+                       EndIcon="@Icons.Material.Filled.ArrowOutward"
+                       Size="Size.Medium">
+                LEIA MAIS
+            </MudButton>
+
+        </MudItem>
+    </MudGrid>
+</MudHidden>
+
+@code {
+    [Parameter]
+    public string Capa { get; set; }
+
+    [Parameter]
+    public string Titulo { get; set; }
+
+    [Parameter]
+    public string Descricao { get; set; }
+
+    [Parameter]
+    public int Id { get; set; }
+}

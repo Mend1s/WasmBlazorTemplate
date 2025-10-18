@@ -19,7 +19,7 @@
                            DropShadow="false"
                            Size="Size.Small"
                            Href="/entre-contato"
-                           Class="text-uppercase bg-btn w-700">
+                           Class="text-uppercase ft-padrao bg-btn w-700">
                     Entre em Contato
                 </MudButton>
             </div>
@@ -76,7 +76,7 @@
         var uri = Navigation.Uri.ToLower();
 
         // Exemplo: aplica navbar com blur apenas na Home
-        if (uri.EndsWith("quem-somos") || uri.Contains("compliance") || uri.Contains("entre-contato"))
+        if (uri.EndsWith("quem-somos") || uri.Contains("compliance") || uri.Contains("entre-contato") || uri.Contains("news"))
             isBlurNavbar = false;
         else
             isBlurNavbar = true;

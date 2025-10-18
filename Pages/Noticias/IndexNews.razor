@@ -1,0 +1,73 @@
+﻿@page "/news"
+@using WasmBlazorTemplate.Models
+@using WasmBlazorTemplate.Pages.Servicos
+@inject HttpClient Http;
+
+@inject IJSRuntime JS
+
+<PageTitle>Notícias | Bella Vista Ambiental</PageTitle>
+
+@* VERSÃO DESKTOP *@
+<MudHidden Breakpoint="Breakpoint.SmAndDown">
+    <div class="wrapper-qm-s d-flex align-center justify-center">
+        <MudContainer MaxWidth="MaxWidth.Medium" Class="flex items-center">
+
+            <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-titulo" Style="margin: 100px 0px">
+                Confira nossas <strong class="f-s-g">iniciativas<br /> e projetos</strong>
+            </MudText>
+
+            @if (newsList is null)
+            {
+                <MudProgressCircular Color="Color.Primary" Size="Size.Large" />
+            }
+            else
+            {
+                @foreach (var item in newsList)
+                {
+                    <CardNews Titulo="@item.Titulo"
+                              Capa="@item.Capa"
+                              Descricao="@item.Descricao"/>
+                }
+            }
+        </MudContainer>
+    </div>
+</MudHidden>
+
+@* VERSÃO MOBILE *@
+<MudHidden Breakpoint="Breakpoint.MdAndUp">
+    <div class="wrapper-qm-s d-flex align-center justify-center">
+        <MudContainer MaxWidth="MaxWidth.Medium" Class="flex items-center">
+
+            <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-titulo-m" Style="margin: 50px 0px">
+                Confira nossas <strong class="f-s-g">iniciativas<br /> e projetos</strong>
+            </MudText>
+
+            @if (newsList is null)
+            {
+                <MudProgressCircular Color="Color.Primary" Size="Size.Large" />
+            }
+            else
+            {
+                @foreach (var item in newsList)
+                {
+                    <CardNews Titulo="@item.Titulo"
+                              Capa="@item.Capa"
+                              Descricao="@item.Descricao"
+                              Id="@item.Id" />
+                }
+            }
+        </MudContainer>
+    </div>
+</MudHidden>
+
+<EntreContatoServicos />
+<Footer />
+
+@code {
+    private List<NewsItem>? newsList;
+
+    protected override async Task OnInitializedAsync()
+    {
+        newsList = await Http.GetFromJsonAsync<List<NewsItem>>("data/newsindex.json");
+    }
+}
