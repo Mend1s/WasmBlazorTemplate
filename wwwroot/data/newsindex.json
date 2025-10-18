@@ -1,9 +1,9 @@
 [
   {
-    "Id": "0",
+    "Id": "1",
     "titulo": "Evolução contínua: Treinamento de Líderes de Alta Performance",
     "descricao": "Na última quinta-feira, a equipe da Bella Vista Ambiental participou de um treinamento exclusivo para Líderes de Alta Performance!",
-    "linkNews": "https://bellavistaambiental.com.br/2025/02/11/evolucao-continuatreinamento-de-lideres-de-alta-performance/",
+    "data": "11 de fevereiro de 2025",
     "capa": "assets/imagem-news.png",
     "blocos": [
       {
@@ -11,6 +11,31 @@
         "src": "assets/imagem-news.png",
         "alt": "Dia Mundial do Meio Ambiente"
       },
+      {
+        "tipo": "text",
+        "conteudo": "Na última quinta feira, dia 06 de fevereiro, a equipe da Bella Vista Ambiental teve a oportunidade de participar de um treinamento exclusivo para Líderes de Alta Performance!"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "O treinamento foi ministrado pelo consultor Samuel Vergenhassi, especializando em potencializar empresas através do desenvolvimento humano e equipes autogerenciáveis."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Nós, da Bella Vista Ambiental, estamos comprometidos em desenvolver o potencial de nossas equipes para proporcionar serviços da mais alta qualidade aos nossos clientes."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Escrito por Néos Comunicação"
+      }
+    ]
+  },
+  {
+    "Id": "2",
+    "titulo": "Bella Vista Ambiental comemora reduçãode 10.700 toneladas de gases de efeito estufa em doze meses!",
+    "descricao": "Setembro é o mês de aniversário da Bella Vista Ambiental, e para comemorar, foram entregues troféus e certificados aos seus parceiros, celebrando o sucesso das parcerias e atestando a redução …",
+    "data": "11 de fevereiro de 2025",
+    "capa": "assets/capa-news-2.png",
+    "blocos": [
       {
         "tipo": "text",
         "conteudo": "Na última quinta feira, dia 06 de fevereiro, a equipe da Bella Vista Ambiental teve a oportunidade de participar de um treinamento exclusivo para Líderes de Alta Performance!"
