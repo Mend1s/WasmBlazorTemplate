@@ -3,11 +3,11 @@
 </MudContainer>
 
 @* VERSÃO DESKTOP *@
-<MudHidden Breakpoint="Breakpoint.SmAndDown">
+<MudHidden Breakpoint="Breakpoint.Md">
     <div class="wrapper5 d-flex align-center justify-center flex-column">
-        <MudContainer MaxWidth="MaxWidth.Large">
+        <MudContainer MaxWidth="MaxWidth.Medium">
             <MudText Typo="Typo.h3"
-                     Class="ft-padrao text-center fs-titulo pb-9">
+                     Class="ft-padrao text-center fs-titulo-2 pb-9">
                 Nossos clientes <strong class="f-s-g">confiam <br />em nossas soluções</strong><br />
             </MudText>
         </MudContainer>
@@ -39,8 +39,9 @@
             </div>
         </div>
 
-        <MudButton Class="bg-btn text-center w-700"
+        <MudButton Class="bg-btn ft-padrao text-center w-700"
                    Variant="Variant.Filled"
+                   Href="/entre-contato"
                    Color="Color.Success"
                    Size="Size.Medium"
                    EndIcon="@Icons.Material.Filled.ArrowOutward">
@@ -98,7 +99,8 @@
 
 <style>
     .wrapper5 {
-        height: 75vh;
+        height: 90vh;
+        padding: 30px 0;
     }
 
     .wrapper5-m {

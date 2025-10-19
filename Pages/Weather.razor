@@ -3,24 +3,26 @@
 </MudContainer>
 
 @* VERSÃO DESKTOP *@
-<MudHidden Breakpoint="Breakpoint.SmAndDown">
+<MudHidden Breakpoint="Breakpoint.Md">
     <div class="wrapper2 d-flex align-center justify-center">
-        <MudContainer MaxWidth="MaxWidth.Large">
-            <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-subt-m pb-5 f-h">
+        <MudContainer MaxWidth="MaxWidth.Medium">
+            <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-subt-2 pb-5 f-h">
                 • NOSSOS SERVIÇOS
             </MudText>
 
-            <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-titulo pb-9">
+            <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-titulo-2 pb-9">
                 <strong class="f-s-g">Soluções que oferecemos</strong><br />
                 para sua empresa
             </MudText>
 
             <MudGrid>
                 <MudItem xs="12" md="3">
-                    <MudCard Elevation="25" style="width: 228px; height:236px; border-radius: 8px">
+                    <MudCard Elevation="25" style="max-width: 228px; min-width: 200px; height:236px; border-radius: 8px">
                         <MudCardContent>
                             <div class="d-flex justify-center align-center pb-9">
-                                <MudImage Src="assets/icon-cacamba.png" Width="80" Height="80" />
+                                <MudAvatar Style="width: 70px; height:70px" Class="bg-card-icon">
+                                    <MudImage Src="assets/icon-cacamba.svg" Style="width: 50px !important; height:46px !important" Fluid />
+                                </MudAvatar>
                             </div>
                             <MudText Typo="Typo.h6" Class="ft-padrao fs-subt-2 text-center">
                                 <strong class="f-s-g">Coleta especializada de resíduos</strong> e produtos não conformes
@@ -30,10 +32,12 @@
                 </MudItem>
 
                 <MudItem xs="12" md="3">
-                    <MudCard Elevation="25" style="width: 228px; height:236px; border-radius: 8px">
+                    <MudCard Elevation="25" style="max-width: 228px; min-width: 200px; height:236px; border-radius: 8px">
                         <MudCardContent>
                             <div class="d-flex justify-center align-center pb-9">
-                                <MudImage Src="assets/icon-transporte.png" Width="80" Height="80" />
+                                <MudAvatar Style="width: 70px; height:70px" Class="bg-card-icon">
+                                    <MudImage Src="assets/icon-transporte.svg" Style="width: 50px !important; height:46px !important" Fluid />
+                                </MudAvatar>
                             </div>
                             <MudText Typo="Typo.h6" Class="ft-padrao fs-subt-2 text-center">
                                 Transporte com <strong class="f-s-g">frota própria de caminhões</strong>
@@ -43,10 +47,12 @@
                 </MudItem>
 
                 <MudItem xs="12" md="3">
-                    <MudCard Elevation="25" style="width: 228px; height:236px; border-radius: 8px">
+                    <MudCard Elevation="25" style="max-width: 228px; min-width: 200px; height:236px; border-radius: 8px">
                         <MudCardContent>
                             <div class="d-flex justify-center align-center pb-9">
-                                <MudImage Src="assets/icon-reciclar.png" Width="80" Height="80" />
+                                <MudAvatar Style="width: 70px; height:70px" Class="bg-card-icon">
+                                    <MudImage Src="assets/icon-reciclar.svg" Style="width: 50px !important; height:46px !important" Fluid />
+                                </MudAvatar>
                             </div>
                             <MudText Typo="Typo.h6" Class="ft-padrao fs-subt-2 text-center">
                                 <strong class="f-s-g">Descaracterização completa</strong> e destinação sustentável
@@ -56,10 +62,12 @@
                 </MudItem>
 
                 <MudItem xs="12" md="3">
-                    <MudCard Elevation="25" style="width: 228px; height:236px; border-radius: 8px">
+                    <MudCard Elevation="25" style="max-width: 228px; min-width: 200px; height:236px; border-radius: 8px">
                         <MudCardContent>
                             <div class="d-flex justify-center align-center pb-9">
-                                <MudImage Src="assets/icon-residuos.png" Width="80" Height="80" />
+                                <MudAvatar Style="width: 70px; height:70px" Class="bg-card-icon">
+                                    <MudImage Src="assets/icon-residuos.svg" Style="width: 50px !important; height:46px !important" Fluid />
+                                </MudAvatar>
                             </div>
                             <MudText Typo="Typo.h6"
                                      Class="ft-padrao fs-subt-2 text-center">
@@ -73,6 +81,7 @@
             <div class="d-flex justify-center pt-9">
                 <MudButton Class="bg-btn ft-padrao text-center w-700"
                            Variant="Variant.Filled"
+                           Href="/servicos"
                            Color="Color.Success"
                            Size="Size.Medium"
                            EndIcon="@Icons.Material.Filled.ArrowOutward">
@@ -167,7 +176,7 @@
 <style>
     .wrapper2 {
         /* 86.2 */
-        height: 86.2vh;
+        height: 100vh;
     }
 
     .wrapper2-m {

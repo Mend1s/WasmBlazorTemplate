@@ -4,13 +4,13 @@
 <PageTitle>Home | Bella Vista Ambiental</PageTitle>
 
 @* VERSÃO DESKTOP *@
-<MudHidden Breakpoint="Breakpoint.SmAndDown">
+<MudHidden Breakpoint="Breakpoint.Md">
     <div class="hero-section">
         <div class="hero-overlay">
-            <MudContainer MaxWidth="MaxWidth.Large" Class="h-full flex items-center">
+            <MudContainer MaxWidth="MaxWidth.Medium" Class="h-full flex items-center">
                 <MudGrid>
                     <MudItem xs="12" md="6" Class="flex flex-col justify-center space-y-4">
-                        <MudText Typo="Typo.h2" Class="ft-padrao c-w w-400 fs-titulo pb-5">
+                        <MudText Class="ft-padrao c-w w-400 fs-titulo-2 pb-5">
                             Soluções ambientais <br />
                             que <span class="w-500">
                                 transformam <br />resíduos em energia <br />
@@ -18,7 +18,7 @@
                             </span>
                         </MudText>
 
-                        <MudText Typo="Typo.body1" Class="ft-padrao fs-subt c-w w-400">
+                        <MudText Class="ft-padrao fs-subt-2 c-w w-400">
                             Mais de 15 anos oferecendo <strong class="w-500"> inovação,<br /> compliance e impacto positivo </strong> para <br /> empresas e para o planeta.
                         </MudText>
                     </MudItem>
@@ -58,7 +58,7 @@
     .hero-section {
         position: relative;
         width: 100%;
-        height: 70vh;
+        height: 80vh;
         background: url("assets/bg-hero.jpg") center center / cover no-repeat;
         top: -64px;
     }
@@ -108,9 +108,9 @@
 <div class="reveal">
     <Clientes />
 </div>
-<div class="reveal">
+@* <div class="reveal">
     <ProjetosMidia />
-</div>
+</div> *@
 <div class="reveal">
     <EntreContato />
 </div>

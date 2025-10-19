@@ -1,7 +1,7 @@
 ﻿@* VERSÃO DESKTOP *@
-<MudHidden Breakpoint="Breakpoint.SmAndDown">
+<MudHidden Breakpoint="Breakpoint.Md">
     <div class="wrapper4 d-flex align-center justify-center">
-        <MudContainer MaxWidth="MaxWidth.Large">
+        <MudContainer MaxWidth="MaxWidth.Medium">
             <MudGrid>
                 <MudItem xs="12" md="6">
                     <MudImage Src="assets/caminho-itens.png"
@@ -14,20 +14,21 @@
                          md="6"
                          Class="flex flex-col justify-center text-white space-y-4">
                     <MudText Typo="Typo.h3"
-                             Class="ft-padrao fs-titulo mb-8">
+                             Class="ft-padrao fs-titulo-2">
                         Como transformamos <strong class="f-s-g">resíduos em valor</strong>
                     </MudText>
 
-                    <MudImage Src="assets/itens-arrow.png"
-                              Width="557"
+                    <MudImage Src="assets/itens-arrow.svg"
+                              Width="490"
                               Height="220"
-                              Class="rounded-lg mb-8"
+                              Class="rounded-lg mb-3"
                               ObjectPosition="ObjectPosition.Center" />
 
                     <MudButton Class="bg-btn ft-padrao text-center w-700"
                                Variant="Variant.Filled"
                                Color="Color.Success"
                                Size="Size.Medium"
+                               Href="/entre-contato"
                                EndIcon="@Icons.Material.Filled.ArrowOutward">
                         Solicite agora um diagnóstico
                     </MudButton>
@@ -69,8 +70,8 @@
 
 <style>
     .wrapper4 {
-        height: 100%;
-        margin: 35px 0;
+        height: 100vh;
+        padding: 40px 0;
     }
 
     .wrapper4-m {

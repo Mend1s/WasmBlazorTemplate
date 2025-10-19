@@ -41,3 +41,7 @@ f-h3 {
 .bg-avatar {
     background: linear-gradient(87.76deg, #1B804D 4.32%, #89BB48 103.03%);
 }
+
+.bg-card-icon {
+    background-color: rgba(84, 159, 157, 1) !important;
+}
