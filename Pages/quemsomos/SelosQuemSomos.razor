@@ -1,10 +1,12 @@
 ﻿@* VERSÃO DESKTOP *@
-<MudHidden Breakpoint="Breakpoint.SmAndDown">
-    <div class="wrapper-qms-selos d-flex align-center">
-        <MudContainer MaxWidth="MaxWidth.Large" Class="d-flex justify-space-between">
-            <MudImage Src="assets/selo1-qms.png" Fluid ObjectPosition="ObjectPosition.Center" />
-            <MudImage Src="assets/selo2-qms.png" Fluid ObjectPosition="ObjectPosition.Center" />
-            <MudImage Src="assets/selo3-qms.png" Fluid ObjectPosition="ObjectPosition.Center" />
+<MudHidden Breakpoint="Breakpoint.Md">
+    <div class="wrapper-qms-selos d-flex justify-center align-center ">
+        <MudContainer MaxWidth="MaxWidth.Medium">
+            <div class="d-flex justify-center align-center gap-4">
+                <MudImage Src="assets/selo1-qms.svg" Width="250" Fluid ObjectPosition="ObjectPosition.Center" />
+                <MudImage Src="assets/selo2-qms.svg" Width="250" Fluid ObjectPosition="ObjectPosition.Center" />
+                <MudImage Src="assets/selo3-qms.svg" Width="250" Fluid ObjectPosition="ObjectPosition.Center" />
+            </div>
         </MudContainer>
     </div>
 </MudHidden>
@@ -15,13 +17,13 @@
         <MudContainer MaxWidth="MaxWidth.Large" Class="d-flex justify-center align-center flex-wrap gap-6">
             <MudGrid Justify="Justify.Center">
                 <MudItem xs="6">
-                    <MudImage Src="assets/selo1-qms.png" Fluid ObjectPosition="ObjectPosition.Center" />
+                    <MudImage Src="assets/selo1-qms.svg" Fluid ObjectPosition="ObjectPosition.Center" />
                 </MudItem>
                 <MudItem xs="6">
-                    <MudImage Src="assets/selo2-qms.png" Fluid ObjectPosition="ObjectPosition.Center" />
+                    <MudImage Src="assets/selo2-qms.svg" Fluid ObjectPosition="ObjectPosition.Center" />
                 </MudItem>
                 <MudItem xs="6">
-                    <MudImage Src="assets/selo3-qms.png" Fluid ObjectPosition="ObjectPosition.Center" />
+                    <MudImage Src="assets/selo3-qms.svg" Fluid ObjectPosition="ObjectPosition.Center" />
                 </MudItem>
             </MudGrid>
         </MudContainer>
@@ -31,7 +33,8 @@
 
 <style>
     .wrapper-qms-selos {
-        height: 60vh;
+        height: 100%;
+        padding: 20px 0;
     }
 
     .wrapper-qms-selos-m {
