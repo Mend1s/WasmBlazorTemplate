@@ -3,7 +3,7 @@
     "Id": "1",
     "titulo": "Evolução contínua: Treinamento de Líderes de Alta Performance",
     "descricao": "Na última quinta-feira, a equipe da Bella Vista Ambiental participou de um treinamento exclusivo para Líderes de Alta Performance!",
-    "data": "11 de fevereiro de 2025",
+    "data": "11 de Fevereiro de 2025",
     "capa": "assets/imagem-news.png",
     "blocos": [
       {
@@ -33,7 +33,7 @@
     "Id": "2",
     "titulo": "Bella Vista Ambiental comemora reduçãode 10.700 toneladas de gases de efeito estufa em doze meses!",
     "descricao": "Setembro é o mês de aniversário da Bella Vista Ambiental, e para comemorar, foram entregues troféus e certificados aos seus parceiros, celebrando o sucesso das parcerias e atestando a redução …",
-    "data": "11 de fevereiro de 2025",
+    "data": "11 de Fevereiro de 2025",
     "capa": "assets/capa-news-2.png",
     "blocos": [
       {
@@ -47,6 +47,133 @@
       {
         "tipo": "text",
         "conteudo": "Nós, da Bella Vista Ambiental, estamos comprometidos em desenvolver o potencial de nossas equipes para proporcionar serviços da mais alta qualidade aos nossos clientes."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Escrito por Néos Comunicação"
+      }
+    ]
+  },
+  {
+    "Id": "3",
+    "titulo": "Dia Internacional de Conscientização sobre Perda e Desperdício de Alimentos",
+    "descricao": "O desperdício de alimentos no Brasil contribui significativamente para a emissão de gases de efeito estufa. Quando os alimentos são desperdiçados, todo o processo envolvido na produção, transporte, armazenamento e …",
+    "capa": "assets/capa-news-3.png",
+    "data": "24 de Setembro de 2025",
+    "blocos": [
+      {
+        "tipo": "text",
+        "conteudo": "O desperdício de alimentos no Brasil contribui significativamente para a emissão de gases de efeito estufa. Quando os alimentos são desperdiçados, todo o processo envolvido na produção, transporte, armazenamento e descarte desses alimentos resulta na liberação de gases de efeito estufa, como o dióxido de carbono (CO2), metano (CH4) e óxido nitroso (N2O)."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Por exemplo, a decomposição dos alimentos orgânicos em aterros sanitários gera a liberação de metano, um potente gás de efeito estufa. Além disso, o uso de fertilizantes na produção de alimentos também pode gerar emissões de óxido nitroso, outro gás com alto potencial de aquecimento global."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Portanto, combater o desperdício de alimentos é essencial não apenas para reduzir a fome e garantir a sustentabilidade dos recursos naturais, mas também para diminuir as emissões de gases de efeito estufa e mitigar as mudanças climáticas. Estratégias como a conscientização da população, a melhoria da gestão da cadeia alimentar e o incentivo à doação de alimentos podem ajudar a reduzir esse impacto ambiental negativo."
+      }
+    ]
+  },
+  {
+    "Id": "4",
+    "titulo": "Bauducco e Bella Vista Ambiental",
+    "descricao": "O evento tem o intuito de mostrar e explicar aos colaboradores as ações da empresa e o trabalho de seus parceiros. A Bella Vista Ambiental foi convidada para palestrar no …",
+    "capa": "assets/capa-news-4.png",
+    "data": "12 de Agosto de 2024",
+    "blocos": [
+      {
+        "tipo": "image",
+        "src": "assets/news-bauduco-1.jpeg",
+        "alt": ""
+      },
+      {
+        "tipo": "text",
+        "conteudo": "O evento tem o intuito de mostrar e explicar aos colaboradores as ações da empresa e o trabalho de seus parceiros."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "A Bella Vista Ambiental foi convidada para palestrar no último dia 14 de julho, em um evento interno da Bauducco chamado “Dia D”, na planta de Extrema – MG para centenas de colaboradores."
+      },
+      {
+        "tipo": "image",
+        "src": "assets/news-bauduco-2.jpeg",
+        "alt": ""
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Durante a palestra o Diretor da Bella Vista Ambiental, detalhou todas as fases do processo realizado pela empresa, desde a coleta dos resíduos e descartes da Bauducco,  até sua destinação correta."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Esse processo envolve a coleta dos materiais na planta, e transporte até a empresa através de uma frota de caminhões com excelência energética, de última geração, que emitem 98% menos gases nocivos ao planeta."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Ao chegar na planta da Bella Vista Ambiental são realizadas a descaracterização dos produtos, a eliminação da marca e separação das embalagens que irão para a reciclagem."
+      },
+      {
+        "tipo": "image",
+        "src": "assets/news-bauduco-3.jpeg",
+        "alt": ""
+      },
+      {
+        "tipo": "text",
+        "conteudo": "O próximo passo é transformar os resíduos e produtos não conformes em coprodutos para nutrição animal."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Os dejetos produzidos pelos animais são remetidos a um biodigestor, onde são decompostos sem a presença de oxigênio,  produzindo gases que serão utilizados como combustível para geradores de energia elétrica, abastecendo todo o complexo e a operação."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Todo esse processo sustentável e inovador, faz com que a Bauducco tenha a certeza de estar destinando seus resíduos de maneira correta, contribuindo para a preservação do meio ambiente e para um futuro melhor."
+      },
+      {
+        "tipo": "image",
+        "src": "assets/news-bauduco-4.png",
+        "alt": ""
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Esses gases retirados da natureza são os principais responsáveis pelo efeito estufa. Esse evento marca uma nova maneira de engajar o colaborador no processo, fazendo com que ele compreenda a importância das ações realizadas pela empresa no cuidado com o meio ambiente e o planeta."
+      }
+    ]
+  },
+  {
+    "Id": "5",
+    "titulo": "BELLA VISTA AMBIENTAL TROCA SUA FROTA POR CAMINHÕES MERCEDES-BENZ BLUETEC 6",
+    "descricao": "BELLA VISTA AMBIENTAL TROCA SUA FROTA POR CAMINHÕES MERCEDES-BENZ BLUETEC 6 Ser mais sustentável e agredir cada vez menos o planeta não é um trabalho, mas sim uma filosofia! A …",
+    "capa": "assets/capa-news-5.png",
+    "data": "22 de Março de 2024",
+    "blocos": [
+      {
+        "tipo": "text",
+        "conteudo": "BELLA VISTA AMBIENTAL TROCA SUA FROTA POR CAMINHÕES MERCEDES-BENZ BLUETEC 6"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Ser mais sustentável e agredir cada vez menos o planeta não é um trabalho, mas sim uma filosofia!"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "A Bella Vista Ambiental decidiu trocar toda a sua frota de caminhões pelos mais modernos modelos da Mercedes-Benz, os Euro 6, que utilizam motores da categoria P8, de acordo com o PROCONVE – Programa de Controle da Poluição do Ar por Veículos Automotores."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Esses caminhões são impulsionados pelos modernos motores da linha Bluetec 6, que promovem uma redução de mais de 90% nas emissões de gases nocivos ao planeta, em relação aos modelos de vinte anos atrás. (Conforme tabela abaixo)"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Comprovando mais uma vez o seu comprometimento com o meio ambiente, a Bella Vista Ambiental reduz o impacto em mais um importante processo do seu dia a dia."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Assim como a transformação de descartes orgânicos em coprodutos para a nutrição animal, a produção de biogás, a geração da energia para o seu próprio funcionamento, e a aquisição de usinas de energia solar, agora a redução de mais de 90% na emissão de gases poluentes durante os transportes."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Essa é a nossa meta, estar melhorando sempre, cada vez mais!"
       },
       {
         "tipo": "text",

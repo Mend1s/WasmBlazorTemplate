@@ -1,6 +1,8 @@
-﻿@page "/news-detalhes/{idNews:int}"
+﻿@page "/news-detalhes/{Id:int}"
 @using WasmBlazorTemplate.Models
 @inject HttpClient Http
+
+<PageTitle>@news.Titulo | Bella Vista Ambiental</PageTitle>
 
 @if (news is null)
 {
@@ -8,19 +10,19 @@
 }
 else
 {
-    <MudContainer MaxWidth="MaxWidth.Medium" Class="text-white pt-10 pb-20">
-        <MudText Typo="Typo.h3" Class="ft-padrao f-s-g mb-1">@news.Titulo</MudText>
-        <MudText Class="mb-6">Publicado em @news.Data</MudText>
+    <MudContainer MaxWidth="MaxWidth.Medium" Class="text-white f-wrp pt-10 pb-20" Style="margin-top: 50px;">
+        <MudText Typo="Typo.h3" Class="ft-padrao fs-news f-s-g mb-3">@news.Titulo</MudText>
+        <MudText Class="mb-6 ft-padrao">Publicado em @news.Data</MudText>
 
         @foreach (var bloco in news.Blocos)
         {
             @switch (bloco.Tipo)
             {
                 case "text":
-                    <MudText Typo="Typo.body1" Class="mb-5">@bloco.Conteudo</MudText>
+                    <MudText Typo="Typo.body1" Class="ft-padrao mb-5">@bloco.Conteudo</MudText>
                     break;
                 case "subtitle":
-                    <MudText Typo="Typo.h5" Class="f-s-g mt-8 mb-3">@bloco.Conteudo</MudText>
+                    <MudText Typo="Typo.h5" Class="ft-padrao f-s-g mt-8 mb-3">@bloco.Conteudo</MudText>
                     break;
                 case "image":
                     <div class="mb-6 d-flex justify-start">
@@ -32,13 +34,22 @@ else
     </MudContainer>
 }
 
+@* <Footer /> *@
+
 @code {
-    [Parameter] public int idNews { get; set; }
+    [Parameter] public int Id { get; set; }
     private NewsItem? news;
 
     protected override async Task OnInitializedAsync()
     {
+        Console.WriteLine($"ID recebido: {Id}");
         var allNews = await Http.GetFromJsonAsync<List<NewsItem>>("data/newsindex.json");
-        news = allNews?.FirstOrDefault(n => n.Id == idNews);
+        news = allNews?.FirstOrDefault(n => n.Id == Id);
     }
 }
+
+<style>
+    .f-wrp {
+        height: 100%;
+    }
+</style>
