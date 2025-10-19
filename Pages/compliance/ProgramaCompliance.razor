@@ -1,8 +1,8 @@
 ﻿@* VERSÃO DESKTOP *@
 <MudHidden Breakpoint="Breakpoint.SmAndDown">
     <div class="wrapper-pcomp d-flex align-center justify-center">
-        <MudContainer MaxWidth="MaxWidth.Large">
-            <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-titulo pb-9">
+        <MudContainer MaxWidth="MaxWidth.Medium">
+            <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-titulo-2 pb-9">
                 Programa de <strong class="f-s-g">Compliance</strong>
             </MudText>
 
@@ -15,7 +15,9 @@
                 <MudCard Elevation="25" style="width: 228px; height:236px; border-radius: 8px">
                     <MudCardContent class="d-flex justify-center align-center flex-column">
                         <div class="d-flex justify-center align-center pb-9">
-                            <MudImage Src="assets/icon-etica-comp.png" Width="80" Height="80" />
+                            <MudAvatar Style="width: 70px; height:70px" Class="bg-card-icon">
+                                <MudImage Src="assets/icon-etica-comp.svg" Style="width: 50px !important; height:46px !important" Fluid />
+                            </MudAvatar>
                         </div>
                         <MudText Typo="Typo.h6" Class="ft-padrao fs-subt-2 text-center">
                             <strong class="f-s-g">Ética e integridade</strong> em<br /> todas as áreas
@@ -26,7 +28,10 @@
                 <MudCard Elevation="25" style="width: 228px; height:236px; border-radius: 8px">
                     <MudCardContent class="d-flex justify-center align-center flex-column">
                         <div class="d-flex justify-center align-center pb-9">
-                            <MudImage Src="assets/icon-confor-comp.png" Width="80" Height="80" />
+                            @* <MudImage Src="assets/icon-confor-comp.svg" Width="80" Height="80" /> *@
+                            <MudAvatar Style="width: 70px; height:70px" Class="bg-card-icon">
+                                <MudImage Src="assets/icon-confor-comp.svg" Style="width: 50px !important; height:46px !important" Fluid />
+                            </MudAvatar>
                         </div>
                         <MudText Typo="Typo.h6" Class="ft-padrao fs-subt-2 text-center">
                             <strong class="f-s-g">Conformidade legal</strong><br /> e ambiental
@@ -37,7 +42,9 @@
                 <MudCard Elevation="25" style="width: 228px; height:236px; border-radius: 8px">
                     <MudCardContent class="d-flex justify-center align-center flex-column">
                         <div class="d-flex justify-center align-center pb-9">
-                            <MudImage Src="assets/icon-relac-comp.png" Width="80" Height="80" />
+                            <MudAvatar Style="width: 70px; height:70px" Class="bg-card-icon">
+                                <MudImage Src="assets/icon-relac-comp.svg" Style="width: 50px !important; height:46px !important" Fluid />
+                            </MudAvatar>
                         </div>
                         <MudText Typo="Typo.h6" Class="ft-padrao fs-subt-2 text-center">
                             <strong class="f-s-g">Relações responsáveis</strong><br /> com parceiros e clientes
@@ -107,7 +114,8 @@
 
 <style>
     .wrapper-pcomp {
-        height: 60vh;
+        height: 100%;
+        padding: 70px 0;
     }
 
     .wrapper-pcomp-m {
