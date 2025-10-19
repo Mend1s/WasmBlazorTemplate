@@ -30,7 +30,15 @@
 @* VERSÃO MOBILE *@
 <MudHidden Breakpoint="Breakpoint.MdAndUp">
     <MudAppBar Elevation="0" Class="@GetNavbarClass()">
-        <MudImage Src="assets/logo-colorido.png" Width="100" Fluid ObjectPosition="ObjectPosition.Center" />
+        @if (isBlurNavbar)
+        {
+            <MudImage Src="assets/logo-colorido.png" Width="100" Fluid ObjectPosition="ObjectPosition.Center" />
+        }
+        else
+        {
+            <MudImage Src="assets/logo-colorido-v2.png" Width="100" Fluid ObjectPosition="ObjectPosition.Center" />
+        }
+        @* <MudImage Src="assets/logo-colorido.png" Width="100" Fluid ObjectPosition="ObjectPosition.Center" /> *@
         <MudSpacer />
         <MudIconButton Icon="@Icons.Material.Filled.Menu"
                        Color="Color.Inherit"
@@ -40,10 +48,10 @@
         </MudContainer> *@
     </MudAppBar>
     <MudDrawer @bind-Open="@_open" Elevation="1">
-        <MudDrawerHeader>
-            <MudImage Src="assets/logo-colorido.png" Fluid ObjectPosition="ObjectPosition.Center" />
+        <MudDrawerHeader Class="d-flex align-center justify-center">
+            <MudImage Src="assets/logo-colorido-v2.png" Width="160" Height="50" Fluid ObjectPosition="ObjectPosition.Center" />
         </MudDrawerHeader>
-        <MudNavMenu>
+        <MudNavMenu Color="Color.Success">
             <MudNavLink Match="NavLinkMatch.All" href="#">Home</MudNavLink>
             <MudNavLink href="quem-somos">Quem somos</MudNavLink>
             <MudNavLink href="compliance">Compliance</MudNavLink>

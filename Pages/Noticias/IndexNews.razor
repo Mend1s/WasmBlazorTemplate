@@ -12,7 +12,7 @@
     <div class="wrapper-qm-s d-flex align-center justify-center">
         <MudContainer MaxWidth="MaxWidth.Medium" Class="flex items-center" Style="margin-bottom: 50px">
 
-            <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-titulo" Style="margin: 100px 0px">
+            <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-titulo-2" Style="margin: 50px 0px">
                 Confira nossas <strong class="f-s-g">iniciativas<br /> e projetos</strong>
             </MudText>
 
@@ -27,7 +27,11 @@
                     <CardNews Titulo="@item.Titulo"
                               Capa="@item.Capa"
                               Descricao="@item.Descricao"
-                              Id="@item.Id"/>
+                              Id="@item.Id" />
+
+                    <MudContainer MaxWidth="MaxWidth.Medium">
+                        <MudDivider />
+                    </MudContainer>
                 }
             }
         </MudContainer>
@@ -55,6 +59,10 @@
                               Capa="@item.Capa"
                               Descricao="@item.Descricao"
                               Id="@item.Id" />
+
+                    <MudContainer MaxWidth="MaxWidth.Medium">
+                        <MudDivider />
+                    </MudContainer>
                 }
             }
         </MudContainer>
