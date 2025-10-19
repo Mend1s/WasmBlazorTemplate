@@ -180,5 +180,107 @@
         "conteudo": "Escrito por Néos Comunicação"
       }
     ]
+  },
+  {
+    "Id": "6",
+    "titulo": "Projetos sustentáveis com redução de custos: como ser uma empresa amiga do planeta",
+    "descricao": "Operar de forma preocupada com o meio ambiente deixou de ser conversa fiada e passou a ser obrigatório dentro de grandes organizações. Você sabia que 95% dos consumidores optam por …",
+    "capa": "assets/capa-news-6.png",
+    "data": "22 de Março de 2024",
+    "blocos": [
+      {
+        "tipo": "text",
+        "conteudo": "Operar de forma preocupada com o meio ambiente deixou de ser conversa fiada e passou a ser obrigatório dentro de grandes organizações. Você sabia que 95% dos consumidores optam por utilizar produtos de marcas que possuem ações sustentáveis claras e efetivas? E não é só isso: esses hábitos são bem vistos pelos investidores também, que preferem investir recursos em companhias que agem no presente pensando no futuro."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Existem diversos métodos, ações e hábitos simples que podem fazer parte de um projeto sustentável com redução de custo, entre eles podemos destacar o gerenciamento adequado de resíduos e de passivos ambientais, o consumo de água e energia consciente, diminuição dos combustíveis fósseis, adoção de fontes de energias limpas e muito mais."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Sabemos que começar esse plano do zero é bem complicado, mas isso não pode ser um impeditivo para você tornar a sua empresa um pouco mais verde a cada dia. Para isso, existem as consultorias em soluções ambientes, que fornecem um estudo completo do que é preciso para o negócio dar os primeiros passos rumo a uma operação mais sustentável e comprometida com o meio ambiente."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Aqui na Bella Vista Ambiental, por exemplo, tratamos 100% dos nossos rejeitos e temos o compromisso de alavancar a destinação ambientalmente correta, sustentável e econômica de nossos clientes também. Queremos tornar seu parceiro nessa busca por ações focadas em um amanhã mais seguro e limpo para todos. Entre em contato com a gente pelo nosso canal oficial de comunicação."
+      }
+    ]
+  },
+  {
+    "Id": "7",
+    "titulo": "Semana Mundial do Meio Ambiente 2023: #CombataAPoluiçãoPlástica",
+    "descricao": "A Semana Mundial do Meio Ambiente foi estabelecida pela ONU (Organização das Nações Unidas) em 1972 durante a Conferência das Nações Unidas sobre o Meio Ambiente Humano, realizada em Estocolmo, …",
+    "capa": "assets/capa-news-7.png",
+    "data": "22 de Março de 2024",
+    "blocos": [
+      {
+        "tipo": "text",
+        "conteudo": "A Semana Mundial do Meio Ambiente foi estabelecida pela ONU (Organização das Nações Unidas) em 1972 durante a Conferência das Nações Unidas sobre o Meio Ambiente Humano, realizada em Estocolmo, na Suécia. Desde então, tornou-se um movimento global para sensibilizar e incentivar práticas de defesa do meio ambiente e da sustentabilidade."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Celebrada anualmente de 01 a 05 de junho, o período é considerado uma das maiores campanhas globais de conscientização e ação para indivíduos, governos, organizações não governamentais e empresas de todo o mundo se unirem por um objetivo comum: conservar e melhorar o nosso planeta."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Este ano, o tema central da campanha é #CombataAPoluiçãoPlástica. Segundo dados da ONU, mais de 400 milhões de toneladas de plástico são produzidas todos os anos, sendo a metade projetada para ser usada uma única vez. Desse total, menos de 10% é reciclado. Estima-se que 19 a 23 milhões de toneladas acabem em lagos, rios e mares."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Diante deste cenário preocupante, um novo relatório do Programa das Nações Unidas para o Meio Ambiente (PNUMA) aponta que a poluição plástica pode ser reduzida em 80% até 2024 se os países e as empresas fizerem mudanças profundas nas políticas e no mercado usando as tecnologias existentes."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Reúso: a promoção de opções de reúso pode reduzir em 30% a poluição por plástico até 2040. Para concretizar seu potencial, os governos devem ajudar a criar modelos comerciais mais sólidos para os reutilizáveis."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Reciclar: reduzir a poluição plástica em mais 20% até 2040 pode ser possível se a reciclagem se tornar um empreendimento mais estável e lucrativo. A remoção dos subsídios aos combustíveis fósseis e outras medidas podem aumentar a parcela de plásticos economicamente recicláveis de 21% para 50%."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Reorientar e diversificar: a substituição cuidadosa de produtos, como embalagens plásticas, sachês e embalagens para viagem, por produtos feitos de materiais alternativos (como papel ou materiais compostáveis) pode proporcionar uma redução adicional de 17% na poluição plástica."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "É importante lembrar que a proteção do meio ambiente não é responsabilidade apenas dos governos ou das grandes organizações. Cada indivíduo tem um papel a desempenhar na conservação dos recursos naturais e na redução dos impactos negativos no meio ambiente. A Semana Mundial do Meio Ambiente serve como um lembrete para que todos nós avaliemos nossas ações diárias e tomemos medidas concretas para reduzir nossa pegada ecológica. E você, como pretende contribuir com essas metas? Pense nisso!"
+      }
+    ]
+  },
+  {
+    "Id": "8",
+    "titulo": "Dia Mundial do Meio Ambiente 2023: que lição tirar desta data super importante",
+    "descricao": "Chegamos ao 50º aniversário do Dia Mundial do Meio Ambiente, após sua instituição pela Assembléia Geral das Nações Unidas em 1972. Nas últimas cinco décadas, a data cresceu e se …",
+    "capa": "assets/capa-news-8.png",
+    "data": "22 de Março de 2024",
+    "blocos": [
+      {
+        "tipo": "text",
+        "conteudo": "Chegamos ao 50º aniversário do Dia Mundial do Meio Ambiente, após sua instituição pela Assembléia Geral das Nações Unidas em 1972. Nas últimas cinco décadas, a data cresceu e se tornou uma das maiores plataformas globais para a sensibilização ambiental. Dezenas de milhões de pessoas participam online e presencialmente por meio de atividades, eventos e ações de engajamento em todo o mundo."
+      },
+      {
+        "tipo": "image",
+        "src": "assets/news-id8.png",
+        "alt": "Dia Mundial do Meio Ambiente"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Com um tema central a cada ano, a data sempre promove a conscientização sobre como temos cuidado do meio ambiente e como estamos diretamente ligados às suas causas e efeitos. Em 2023, a poluição plástica pretende trazer reflexões severas sobre como produzimos, utilizamos e descartamos esses materiais sem nenhum compromisso ambiental, e o quanto ela impacta negativamente sobre a saúde humana e a economia mundial."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "A boa notícia é que temos ciência e soluções para enfrentar o problema – e muita coisa já está acontecendo. O que é mais necessário agora é uma onda de pressão pública e política para ampliar e acelerar as ações de governos, empresas e outras partes interessadas para resolver essa crise, mobilizando todos os cantos do mundo."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "O compromisso coletivo deve ser a ponte no combate a poluição e todos precisam entender o papel importante que exercem no presente em busca de um amanhã muito mais ambientalmente saudável para todos. Neste 05 de junho – e em todos os outros dias do ano – una-se a milhões de pessoas ao redor do mundo e hashtag#CombataAPoluiçãoPlástica. Faça a sua parte!"
+      }
+    ]
+  },
+  {
+    "Id": "9",
+    "titulo": "A reciclagem como parte do caminho para o aterro zero",
+    "descricao": "Maio é marcado por uma data de conscientização ambiental: o Dia Mundial da Reciclagem. E como falar em reaproveitamento sem falar sobre aterro zero? É por isso que vamos finalizar …",
+    "capa": "assets/capa-news-9.png"
   }
 ]

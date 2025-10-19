@@ -2,7 +2,7 @@
 @using WasmBlazorTemplate.Models
 @inject HttpClient Http
 
-<PageTitle>@news.Titulo | Bella Vista Ambiental</PageTitle>
+<PageTitle>@news?.Titulo | Bella Vista Ambiental</PageTitle>
 
 @if (news is null)
 {

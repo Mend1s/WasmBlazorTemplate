@@ -30,12 +30,12 @@
 @* VERSÃO MOBILE *@
 <MudHidden Breakpoint="Breakpoint.MdAndUp">
     <MudAppBar Elevation="0" Class="@GetNavbarClass()">
-            <MudImage Src="assets/logo-colorido.png" Width="100" Fluid ObjectPosition="ObjectPosition.Center" />
-            <MudSpacer />
-            <MudIconButton Icon="@Icons.Material.Filled.Menu"
-                           Color="Color.Inherit"
-                           Edge="Edge.End"
-                           OnClick="@ToggleDrawer" />
+        <MudImage Src="assets/logo-colorido.png" Width="100" Fluid ObjectPosition="ObjectPosition.Center" />
+        <MudSpacer />
+        <MudIconButton Icon="@Icons.Material.Filled.Menu"
+                       Color="Color.Inherit"
+                       Edge="Edge.End"
+                       OnClick="@ToggleDrawer" />
         @* <MudContainer MaxWidth="MaxWidth.Large">
         </MudContainer> *@
     </MudAppBar>
@@ -49,7 +49,7 @@
             <MudNavLink href="compliance">Compliance</MudNavLink>
             <MudNavLink href="servicos">Serviços</MudNavLink>
             <MudNavLink href="entre-contato">Entre em Contato</MudNavLink>
-            @* <MudNavLink href="news">News</MudNavLink> *@
+            <MudNavLink href="news">News</MudNavLink>
         </MudNavMenu>
     </MudDrawer>
 </MudHidden>
@@ -93,7 +93,7 @@
 <style>
     .nav-bar {
         /* background: url("assets/bg-hero.jpg") center center / cover no-repeat;
-            background-position: 25% 18%; */
+                background-position: 25% 18%; */
         background: linear-gradient(85.18deg, #1B804D -3.87%, #89BB48 118.16%) !important;
     }
 
@@ -102,7 +102,7 @@
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
         border-top: 3px solid #7ed957; /* verde da identidade visual */
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
         color: white;
     }
 
@@ -110,7 +110,7 @@
         background-color: white;
         color: black;
         border-top: 3px solid #7ed957; /* verde da identidade visual */
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
         /* transition: background-color 0.3s ease; */
     }
 </style>
