@@ -4,35 +4,71 @@
 
 <PageTitle>@news?.Titulo | Bella Vista Ambiental</PageTitle>
 
-@if (news is null)
-{
-    <MudProgressCircular Color="Color.Primary" Size="Size.Large" />
-}
-else
-{
-    <MudContainer MaxWidth="MaxWidth.Medium" Class="text-white f-wrp pt-10 pb-20" Style="margin-top: 50px;">
-        <MudText Typo="Typo.h3" Class="ft-padrao fs-news f-s-g mb-3">@news.Titulo</MudText>
-        <MudText Class="mb-6 ft-padrao">Publicado em @news.Data</MudText>
+@* VERSÃO DESKTOP *@
+<MudHidden Breakpoint="Breakpoint.SmAndDown">
+    @if (news is null)
+    {
+        <MudProgressCircular Color="Color.Primary" Size="Size.Large" />
+    }
+    else
+    {
+        <MudContainer MaxWidth="MaxWidth.Medium" Class="text-white f-wrp pt-10 pb-20" Style="margin-top: 50px;">
+            <MudText Typo="Typo.h3" Class="ft-padrao fs-news f-s-g mb-3">@news.Titulo</MudText>
+            <MudText Class="mb-6 ft-padrao">Publicado em @news.Data</MudText>
 
-        @foreach (var bloco in news.Blocos)
-        {
-            @switch (bloco.Tipo)
+            @foreach (var bloco in news.Blocos)
             {
-                case "text":
-                    <MudText Typo="Typo.body1" Class="ft-padrao mb-5">@bloco.Conteudo</MudText>
-                    break;
-                case "subtitle":
-                    <MudText Typo="Typo.h5" Class="ft-padrao f-s-g mt-8 mb-3">@bloco.Conteudo</MudText>
-                    break;
-                case "image":
-                    <div class="mb-6 d-flex justify-start">
-                        <MudImage Src="@bloco.Src" Alt="@bloco.Alt" Fluid Width="680" MaxWidth="800px" />
-                    </div>
-                    break;
+                @switch (bloco.Tipo)
+                {
+                    case "text":
+                        <MudText Typo="Typo.body1" Class="ft-padrao mb-5">@bloco.Conteudo</MudText>
+                        break;
+                    case "subtitle":
+                        <MudText Typo="Typo.h5" Class="ft-padrao f-s-g mt-8 mb-3">@bloco.Conteudo</MudText>
+                        break;
+                    case "image":
+                        <div class="mb-6 d-flex justify-start">
+                            <MudImage Src="@bloco.Src" Alt="@bloco.Alt" Fluid Width="680" MaxWidth="800px" />
+                        </div>
+                        break;
+                }
             }
-        }
-    </MudContainer>
-}
+        </MudContainer>
+    }
+</MudHidden>
+
+@* VERSÃO MOBILE *@
+<MudHidden Breakpoint="Breakpoint.MdAndUp">
+    @if (news is null)
+    {
+        <MudProgressCircular Color="Color.Primary" Size="Size.Large" />
+    }
+    else
+    {
+        <MudContainer MaxWidth="MaxWidth.Medium" Class="text-white f-wrp pb-20" Style="margin-top: 20px;">
+            <MudText Typo="Typo.h3" Class="ft-padrao fs-titulo-m f-s-g mb-3">@news.Titulo</MudText>
+            <MudText Class="mb-6 ft-padrao fs-subt-m">Publicado em @news.Data</MudText>
+
+            @foreach (var bloco in news.Blocos)
+            {
+                @switch (bloco.Tipo)
+                {
+                    case "text":
+                        <MudText Typo="Typo.body1" Class="ft-padrao mb-5">@bloco.Conteudo</MudText>
+                        break;
+                    case "subtitle":
+                        <MudText Typo="Typo.h5" Class="ft-padrao f-s-g mt-8 mb-3">@bloco.Conteudo</MudText>
+                        break;
+                    case "image":
+                        <div class="mb-6 d-flex justify-start">
+                            <MudImage Src="@bloco.Src" Alt="@bloco.Alt" Fluid Width="680" MaxWidth="800px" />
+                        </div>
+                        break;
+                }
+            }
+        </MudContainer>
+    }
+</MudHidden>
 
 @* <Footer /> *@
 

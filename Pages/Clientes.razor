@@ -3,7 +3,7 @@
 </MudContainer>
 
 @* VERSÃO DESKTOP *@
-<MudHidden Breakpoint="Breakpoint.Md">
+<MudHidden Breakpoint="Breakpoint.SmAndDown">
     <div class="wrapper5 d-flex align-center justify-center flex-column">
         <MudContainer MaxWidth="MaxWidth.Medium">
             <MudText Typo="Typo.h3"
@@ -67,8 +67,8 @@
                     <div class="logo-card">
                         <MudPaper Elevation="25"
                                   Class="p-4 rounded-lg shadow-md d-flex justify-center align-center"
-                                  style="width: 200px !important; height: 180px !important;">
-                            <img src="@logo" class="h-12 object-contain" />
+                                  style="width: 68px !important; height: 61px !important;">
+                            <MudImage src="@logo" Width="50" Height="50" Fluid ObjectPosition="ObjectPosition.Center" ObjectFit="ObjectFit.Cover" />
                         </MudPaper>
                     </div>
                 }
@@ -79,8 +79,8 @@
                     <div class="logo-card">
                         <MudPaper Elevation="25"
                                   Class="p-4 rounded-lg shadow-md d-flex justify-center align-center"
-                                  style="width: 200px !important; height: 180px !important;">
-                            <img src="@logo" class="h-12 object-contain" />
+                                  style="width: 68px !important; height: 61px !important;">
+                            <MudImage src="@logo" Width="50" Height="50" Fluid ObjectPosition="ObjectPosition.Center" ObjectFit="ObjectFit.Cover" />
                         </MudPaper>
                     </div>
                 }
@@ -90,7 +90,7 @@
         <MudButton Class="bg-btn ft-padrao text-center w-700"
                    Variant="Variant.Filled"
                    Color="Color.Success"
-                   Size="Size.Medium"                   
+                   Size="Size.Medium"
                    EndIcon="@Icons.Material.Filled.ArrowOutward">
             Seja um parceiro
         </MudButton>
@@ -119,6 +119,6 @@
         "assets/logo-MasterMartini.png",
         "assets/logo-NEstle.png",
         "assets/logo-Únigra.png",
-        "assets/logo-SantaHelena.png"        
+        "assets/logo-SantaHelena.png",
     };
 }
