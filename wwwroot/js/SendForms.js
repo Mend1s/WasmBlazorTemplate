@@ -11,7 +11,7 @@
 
 window.SendForms = async function (formData) {
     try {
-        const serviceID = "service_cjafxeh";   // substitua
+        const serviceID = "service_fblsvka";   // substitua
         const templateID = "template_l2xgjyd"; // substitua
 
         // Cria uma única mensagem concatenando todos os dados
