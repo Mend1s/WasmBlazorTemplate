@@ -7,11 +7,15 @@
             <div class="d-flex justify-space-between align-center">
                 @if (isBlurNavbar)
                 {
-                    <MudImage Src="assets/logo-colorido.png" Width="150" Fluid ObjectPosition="ObjectPosition.Center" />
+                    <MudLink Href="/">
+                        <MudImage Src="assets/logo-colorido.png" Width="150" Fluid ObjectPosition="ObjectPosition.Center" />
+                    </MudLink>
                 }
                 else
                 {
-                    <MudImage Src="assets/logo-colorido-v2.png" Width="150" Fluid ObjectPosition="ObjectPosition.Center" />
+                    <MudLink Href="/">
+                        <MudImage Src="assets/logo-colorido-v2.png" Width="150" Fluid ObjectPosition="ObjectPosition.Center" />
+                    </MudLink>
                 }
                 <NavMenuLinks />
                 <MudButton Variant="Variant.Filled"
@@ -101,7 +105,7 @@
 <style>
     .nav-bar {
         /* background: url("assets/bg-hero.jpg") center center / cover no-repeat;
-                background-position: 25% 18%; */
+                        background-position: 25% 18%; */
         background: linear-gradient(85.18deg, #1B804D -3.87%, #89BB48 118.16%) !important;
     }
 
