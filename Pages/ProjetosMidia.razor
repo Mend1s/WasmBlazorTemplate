@@ -1,6 +1,6 @@
 ﻿@* VERSÃO DESKTOP *@
-<MudHidden Breakpoint="Breakpoint.Md">
-    <div class="wrapper9 d-flex align-center justify-center flex-column bg-g">
+<MudHidden Breakpoint="Breakpoint.SmAndDown">
+    <div class="wrapper9 d-flex flex-column align-center justify-center bg-g" style="width: 100%;">
         <MudContainer MaxWidth="MaxWidth.Medium">
             <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-subt-2 pb-7 f-h">
                 • BELLA VISTA NA MÍDIA
@@ -10,27 +10,67 @@
                 Confira nossas <strong class="f-s-g">iniciativas<br /> e projetos</strong>
             </MudText>
 
-            <MudGrid Justify="Justify.Center">
-                <MudItem xs="12" md="6">
-                    <MudCard>
-                        <MudCardContent>
-                            <div class="d-flex justify-center align-center">
-                                <MudAvatar Color="Color.Secondary">I</MudAvatar>
-                            </div>
-                        </MudCardContent>
-                    </MudCard>
-                </MudItem>
+            <MudCarousel TData="object" Class="mud-height-full" ShowBullets=false>
+                <MudCarouselItem Class="d-flex justify-center align-center" style="height:100%;">
+                    <MudCard Class="d-flex flex-row rounded-2xl overflow-hidden shadow-lg" Style="max-width: 700px;">
+                        <!-- Imagem da notícia -->
+                        <MudPaper Style="background: linear-gradient(180deg, #FFA726, #FFB74D); display: flex; align-items: center; justify-content: center;">
+                            <MudImage src="assets/imagem-news.png" Width=250 Height="240" alt="Notícia" ObjectFit="ObjectFit.Cover" ObjectPosition="ObjectPosition.Center" />
+                        </MudPaper>
 
-                <MudItem xs="12" md="6">
-                    <MudCard>
+                        <!-- Conteúdo -->
                         <MudCardContent>
-                            <div class="d-flex justify-center align-center">
-                                <MudAvatar Color="Color.Secondary">I</MudAvatar>
-                            </div>
+                            <MudText Class="ft-padrao f-s-g w-700 fs-subt-2 mb-6 mt-3">
+                                Evolução contínua: <span class="text-primary">Treinamento de Líderes de Alta Performance</span>
+                            </MudText>
+
+                            <MudText Class="ft-padrao fs-subt-m pb-3">
+                                Na última quinta-feira, dia 06 de fevereiro, a equipe da Bella Vista Ambiental teve a oportunidade
+                                de participar de um treinamento exclusivo para Líderes de Alta Performance! O treinamento ...
+                            </MudText>
+
+                            <MudButton Class="fs-subt-m f-h ft-padrao"
+                                       Style="margin-left: -7px"
+                                       Href="@($"/news-detalhes/1")"
+                                       Target="_blank"
+                                       EndIcon="@Icons.Material.Filled.ArrowOutward"
+                                       Size="Size.Medium">
+                                LEIA MAIS
+                            </MudButton>
                         </MudCardContent>
                     </MudCard>
-                </MudItem>
-            </MudGrid>
+                </MudCarouselItem>
+
+                <MudCarouselItem Class="d-flex justify-center align-center">
+                    <MudCard Class="d-flex flex-row rounded-2xl overflow-hidden shadow-lg" Style="max-width: 700px;">
+                        <!-- Imagem da notícia -->
+                        <MudPaper Style="background: linear-gradient(180deg, #FFA726, #FFB74D); display: flex; align-items: center; justify-content: center;">
+                            <MudImage src="assets/imagem-news.png" Width=250 Height="240" alt="Notícia" ObjectFit="ObjectFit.Cover" ObjectPosition="ObjectPosition.Center" />
+                        </MudPaper>
+
+                        <!-- Conteúdo -->
+                        <MudCardContent>
+                            <MudText Class="ft-padrao f-s-g w-700 fs-subt-2 mb-6 mt-3">
+                                Evolução contínua: <span class="text-primary">Treinamento de Líderes de Alta Performance</span>
+                            </MudText>
+
+                            <MudText Class="ft-padrao fs-subt-m pb-3">
+                                Na última quinta-feira, dia 06 de fevereiro, a equipe da Bella Vista Ambiental teve a oportunidade
+                                de participar de um treinamento exclusivo para Líderes de Alta Performance! O treinamento ...
+                            </MudText>
+
+                            <MudButton Class="fs-subt-m f-h ft-padrao"
+                                       Style="margin-left: -7px"
+                                       Href="@($"/news-detalhes/1")"
+                                       Target="_blank"
+                                       EndIcon="@Icons.Material.Filled.ArrowOutward"
+                                       Size="Size.Medium">
+                                LEIA MAIS
+                            </MudButton>
+                        </MudCardContent>
+                    </MudCard>
+                </MudCarouselItem>
+            </MudCarousel>
         </MudContainer>
     </div>
 </MudHidden>
@@ -48,22 +88,64 @@
             </MudText>
 
             <MudGrid Justify="Justify.Center">
-                <MudItem xs="12" md="6">
-                    <MudCard>
+                <MudItem lg="6">
+                    <MudCard Class="d-flex flex-row rounded-2xl overflow-hidden shadow-lg" Style="max-width: 700px;">
+
+                        <!-- Imagem da notícia -->
+                        <MudPaper Style="background: linear-gradient(180deg, #FFA726, #FFB74D); display: flex; align-items: center; justify-content: center;">
+                            <MudImage src="assets/imagem-news.png" Width=160 Height="220" alt="Notícia" ObjectFit="ObjectFit.Cover" ObjectPosition="ObjectPosition.Center" />
+                        </MudPaper>
+
+                        <!-- Conteúdo -->
                         <MudCardContent>
-                            <div class="d-flex justify-center align-center">
-                                <MudAvatar Color="Color.Secondary">I</MudAvatar>
-                            </div>
+                            <MudText Class="ft-padrao f-s-g w-700 fs-subt-2 mb-6 mt-3">
+                                Evolução contínua: <span class="text-primary">Treinamento de Líderes de Alta Performance</span>
+                            </MudText>
+
+                            <MudText Class="ft-padrao fs-subt-m pb-3">
+                                Na última quinta-feira, dia 06 de fevereiro, a equipe da Bella Vista Ambiental teve a oportunidade
+                                de participar de um treinamento exclusivo para Líderes de Alta Performance! O treinamento ...
+                            </MudText>
+
+                            <MudButton Class="fs-subt-m f-h ft-padrao"
+                                       Style="margin-left: -7px"
+                                       Href="@($"/news-detalhes/1")"
+                                       Target="_blank"
+                                       EndIcon="@Icons.Material.Filled.ArrowOutward"
+                                       Size="Size.Medium">
+                                LEIA MAIS
+                            </MudButton>
                         </MudCardContent>
                     </MudCard>
                 </MudItem>
 
-                <MudItem xs="12" md="6">
-                    <MudCard>
+                <MudItem lg="6">
+                    <MudCard Class="d-flex flex-row rounded-2xl overflow-hidden shadow-lg" Style="max-width: 700px;">
+
+                        <!-- Imagem da notícia -->
+                        <MudPaper Style="background: linear-gradient(180deg, #FFA726, #FFB74D); display: flex; align-items: center; justify-content: center;">
+                            <MudImage src="assets/imagem-news.png" Width=160 Height="220" alt="Notícia" ObjectFit="ObjectFit.Cover" ObjectPosition="ObjectPosition.Center" />
+                        </MudPaper>
+
+                        <!-- Conteúdo -->
                         <MudCardContent>
-                            <div class="d-flex justify-center align-center">
-                                <MudAvatar Color="Color.Secondary">I</MudAvatar>
-                            </div>
+                            <MudText Class="ft-padrao f-s-g w-700 fs-subt-2 mb-6 mt-3">
+                                Evolução contínua: <span class="text-primary">Treinamento de Líderes de Alta Performance</span>
+                            </MudText>
+
+                            <MudText Class="ft-padrao fs-subt-m pb-3">
+                                Na última quinta-feira, dia 06 de fevereiro, a equipe da Bella Vista Ambiental teve a oportunidade
+                                de participar de um treinamento exclusivo para Líderes de Alta Performance! O treinamento ...
+                            </MudText>
+
+                            <MudButton Class="fs-subt-m f-h ft-padrao"
+                                       Style="margin-left: -7px"
+                                       Href="@($"/news-detalhes/1")"
+                                       Target="_blank"
+                                       EndIcon="@Icons.Material.Filled.ArrowOutward"
+                                       Size="Size.Medium">
+                                LEIA MAIS
+                            </MudButton>
                         </MudCardContent>
                     </MudCard>
                 </MudItem>
