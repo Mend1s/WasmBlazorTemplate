@@ -2,7 +2,7 @@
 <MudHidden Breakpoint="Breakpoint.SmAndDown">
     <div class="wrapper9 d-flex flex-column align-center justify-center bg-g" style="width: 100%;">
         <MudContainer MaxWidth="MaxWidth.Medium">
-            <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-subt-2 pb-7 f-h">
+            <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-subt-2 pb-7 pt-9 f-h">
                 • BELLA VISTA NA MÍDIA
             </MudText>
 
@@ -10,8 +10,8 @@
                 Confira nossas <strong class="f-s-g">iniciativas<br /> e projetos</strong>
             </MudText>
 
-            <MudCarousel TData="object" Class="mud-height-full" ShowBullets=false>
-                <MudCarouselItem Class="d-flex justify-center align-center" style="height:100%;">
+            <MudGrid Justify="Justify.Center" Class="pb-9">
+                <MudItem lg="6">
                     <MudCard Class="d-flex flex-row rounded-2xl overflow-hidden shadow-lg" Style="max-width: 700px;">
                         <!-- Imagem da notícia -->
                         <MudPaper Style="background: linear-gradient(180deg, #FFA726, #FFB74D); display: flex; align-items: center; justify-content: center;">
@@ -30,15 +30,50 @@
                             </MudText>
 
                             <MudButton Class="fs-subt-m f-h ft-padrao"
-                                       Style="margin-left: -7px"
-                                       Href="@($"/news-detalhes/1")"
-                                       Target="_blank"
-                                       EndIcon="@Icons.Material.Filled.ArrowOutward"
-                                       Size="Size.Medium">
+                            Style="margin-left: -7px"
+                            Href="@($"/news-detalhes/1")"
+                            Target="_blank"
+                            EndIcon="@Icons.Material.Filled.ArrowOutward"
+                            Size="Size.Medium">
                                 LEIA MAIS
                             </MudButton>
                         </MudCardContent>
                     </MudCard>
+                </MudItem>
+
+                <MudItem lg="6">
+                    <MudCard Class="d-flex flex-row rounded-2xl overflow-hidden shadow-lg" Style="max-width: 700px;">
+                        <!-- Imagem da notícia -->
+                        <MudPaper Style="background: linear-gradient(180deg, #FFA726, #FFB74D); display: flex; align-items: center; justify-content: center;">
+                            <MudImage src="assets/capa-news-2.png" Width=250 Height="240" alt="Notícia" ObjectFit="ObjectFit.Cover" ObjectPosition="ObjectPosition.Center" />
+                        </MudPaper>
+
+                        <!-- Conteúdo -->
+                        <MudCardContent>
+                            <MudText Class="ft-padrao f-s-g w-700 fs-subt-2 mb-6 mt-3">
+                                Bella Vista Ambiental comemora redução de 10.700...
+                            </MudText>
+
+                            <MudText Class="ft-padrao fs-subt-m pb-3">
+                                Setembro é o mês de aniversário da Bella Vista Ambiental, e para comemorar, foram entregues troféus e certificados aos seus parceiros, celebrando o sucesso das parcerias …
+                            </MudText>
+
+                            <MudButton Class="fs-subt-m f-h ft-padrao"
+                            Style="margin-left: -7px"
+                            Href="@($"/news-detalhes/2")"
+                            Target="_blank"
+                            EndIcon="@Icons.Material.Filled.ArrowOutward"
+                            Size="Size.Medium">
+                                LEIA MAIS
+                            </MudButton>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+            </MudGrid>
+
+
+            @* <MudCarousel TData="object" Class="mud-height-full" ShowBullets=false>
+                <MudCarouselItem Class="d-flex justify-center align-center" style="height:100%;">
                 </MudCarouselItem>
 
                 <MudCarouselItem Class="d-flex justify-center align-center">
@@ -70,15 +105,15 @@
                         </MudCardContent>
                     </MudCard>
                 </MudCarouselItem>
-            </MudCarousel>
+            </MudCarousel> *@
         </MudContainer>
     </div>
 </MudHidden>
 
 @* VERSÃO MOBILE *@
 <MudHidden Breakpoint="Breakpoint.MdAndUp">
-    <div class="wrapper9-m d-flex align-center justify-center flex-column bg-g">
-        <MudContainer MaxWidth="MaxWidth.Large">
+    <div class="wrapper9-m bg-g">
+        <MudContainer MaxWidth="MaxWidth.Medium">
             <MudText Typo="Typo.h3" Class="ft-padrao text-center fs-subt-m pb-7 f-h">
                 • BELLA VISTA NA MÍDIA
             </MudText>
@@ -87,7 +122,90 @@
                 Confira nossas <strong class="f-s-g">iniciativas e projetos</strong>
             </MudText>
 
-            <MudGrid Justify="Justify.Center">
+
+            <MudCarousel TData="object" Style="height:300px;" Class="mud-height-full" ShowBullets=true>
+                <BulletTemplate Context="selected">
+                    <div Class="mud-button-root mud-icon-button mud-icon-button-color-inherit mud-ripple mud-ripple-icon">
+                        <span class="mud-icon-button-label">
+                            @if (selected)
+                            {
+                                @* <MudIcon Icon="@(selected ? Icons.Material.Filled.CheckCircle : Icons.Material.Filled.Circle)" Size="Size.Small" /> *@
+                                <MudIcon Icon="@Icons.Material.Filled.Circle" Size="Size.Small" Style="color: #1B804D;" />
+                            }
+                            else
+                            {
+                                <MudIcon Icon="@Icons.Material.Filled.Circle" Size="Size.Small" Style="color: #1B804DCC;" />
+                            }
+                        </span>
+                    </div>
+                </BulletTemplate>
+
+                <ChildContent>
+                    @* ITEM 1 *@
+                    <MudCarouselItem Transition="Transition.Slide">
+                        <MudCard Class="d-flex flex-row rounded-2xl overflow-hidden shadow-lg">
+                            <!-- Imagem da notícia -->
+                            <MudPaper Style="background: linear-gradient(180deg, #FFA726, #FFB74D); display: flex; align-items: center; justify-content: center;">
+                                <MudImage src="assets/imagem-news.png" Width=200 Height="245" alt="Notícia" ObjectFit="ObjectFit.Cover" ObjectPosition="ObjectPosition.Center" />
+                            </MudPaper>
+
+                            <!-- Conteúdo -->
+                            <MudCardContent>
+                                <MudText Class="ft-padrao f-s-g w-700 fs-subt-2 mb-6 mt-3">
+                                    Evolução contínua: <span class="text-primary">Treinamento de Líderes de Alta Performance</span>
+                                </MudText>
+
+                                <MudText Class="ft-padrao fs-subt-m pb-3">
+                                    Na última quinta-feira, dia 06 de fevereiro, a equipe da Bella Vista Ambiental teve a oportunidade
+                                    de participar de um treinamento exclusivo para Líderes de Alta Performance! O treinamento ...
+                                </MudText>
+
+                                <MudButton Class="fs-subt-m f-h ft-padrao"
+                                           Style="margin-left: -7px"
+                                           Href="@($"/news-detalhes/1")"
+                                           Target="_blank"
+                                           EndIcon="@Icons.Material.Filled.ArrowOutward"
+                                           Size="Size.Medium">
+                                    LEIA MAIS
+                                </MudButton>
+                            </MudCardContent>
+                        </MudCard>
+                    </MudCarouselItem>
+
+                    @* ITEM 2 *@
+                    <MudCarouselItem Transition="Transition.Slide">
+                        <MudCard Class="d-flex flex-row rounded-2xl overflow-hidden shadow-lg" Style="max-width: 700px;">
+                            <!-- Imagem da notícia -->
+                            <MudPaper Style="background: linear-gradient(180deg, #FFA726, #FFB74D); display: flex; align-items: center; justify-content: center;">
+                                <MudImage src="assets/capa-news-2.png" Width=200 Height="240" alt="Notícia" ObjectFit="ObjectFit.Cover" ObjectPosition="ObjectPosition.Center" />
+                            </MudPaper>
+
+                            <!-- Conteúdo -->
+                            <MudCardContent>
+                                <MudText Class="ft-padrao f-s-g w-700 fs-subt-2 mb-6 mt-3">
+                                    Bella Vista Ambiental comemora redução de 10.700...
+                                </MudText>
+
+                                <MudText Class="ft-padrao fs-subt-m pb-3">
+                                    Setembro é o mês de aniversário da Bella Vista Ambiental, e para comemorar, foram entregues troféus e certificados aos seus parceiros, celebrando o sucesso das parcerias …
+                                </MudText>
+
+                                <MudButton Class="fs-subt-m f-h ft-padrao"
+                                           Style="margin-left: -7px"
+                                           Href="@($"/news-detalhes/2")"
+                                           Target="_blank"
+                                           EndIcon="@Icons.Material.Filled.ArrowOutward"
+                                           Size="Size.Medium">
+                                    LEIA MAIS
+                                </MudButton>
+                            </MudCardContent>
+                        </MudCard>
+                    </MudCarouselItem>
+                </ChildContent>
+            </MudCarousel>
+
+
+            @* <MudGrid Justify="Justify.Center">
                 <MudItem lg="6">
                     <MudCard Class="d-flex flex-row rounded-2xl overflow-hidden shadow-lg" Style="max-width: 700px;">
 
@@ -124,23 +242,22 @@
 
                         <!-- Imagem da notícia -->
                         <MudPaper Style="background: linear-gradient(180deg, #FFA726, #FFB74D); display: flex; align-items: center; justify-content: center;">
-                            <MudImage src="assets/imagem-news.png" Width=160 Height="220" alt="Notícia" ObjectFit="ObjectFit.Cover" ObjectPosition="ObjectPosition.Center" />
+                            <MudImage src="assets/capa-news-2.png" Width=160 Height="220" alt="Notícia" ObjectFit="ObjectFit.Cover" ObjectPosition="ObjectPosition.Center" />
                         </MudPaper>
 
                         <!-- Conteúdo -->
                         <MudCardContent>
                             <MudText Class="ft-padrao f-s-g w-700 fs-subt-2 mb-6 mt-3">
-                                Evolução contínua: <span class="text-primary">Treinamento de Líderes de Alta Performance</span>
+                                Bella Vista Ambiental comemora redução de 10.700...
                             </MudText>
 
                             <MudText Class="ft-padrao fs-subt-m pb-3">
-                                Na última quinta-feira, dia 06 de fevereiro, a equipe da Bella Vista Ambiental teve a oportunidade
-                                de participar de um treinamento exclusivo para Líderes de Alta Performance! O treinamento ...
+                                Setembro é o mês de aniversário da Bella Vista Ambiental, e para comemorar, foram entregues troféus e certificados aos seus parceiros, celebrando o sucesso das parcerias …
                             </MudText>
 
                             <MudButton Class="fs-subt-m f-h ft-padrao"
                                        Style="margin-left: -7px"
-                                       Href="@($"/news-detalhes/1")"
+                                       Href="@($"/news-detalhes/2")"
                                        Target="_blank"
                                        EndIcon="@Icons.Material.Filled.ArrowOutward"
                                        Size="Size.Medium">
@@ -149,7 +266,7 @@
                         </MudCardContent>
                     </MudCard>
                 </MudItem>
-            </MudGrid>
+            </MudGrid> *@
         </MudContainer>
     </div>
 </MudHidden>
@@ -157,6 +274,7 @@
 <style>
     .wrapper9 {
         height: 75vh;
+        padding: 30px 0;
     }
 
     .wrapper9-m {
