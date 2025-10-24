@@ -281,6 +281,386 @@
     "Id": "9",
     "titulo": "A reciclagem como parte do caminho para o aterro zero",
     "descricao": "Maio é marcado por uma data de conscientização ambiental: o Dia Mundial da Reciclagem. E como falar em reaproveitamento sem falar sobre aterro zero? É por isso que vamos finalizar …",
-    "capa": "assets/capa-news-9.png"
+    "capa": "assets/capa-news-9.png",
+    "data": "22 de Março de 2024",
+    "blocos": [
+      {
+        "tipo": "text",
+        "conteudo": "Maio é marcado por uma data de conscientização ambiental: o Dia Mundial da Reciclagem. E como falar em reaproveitamento sem falar sobre aterro zero? É por isso que vamos finalizar o quinto mês do ano abordando este conceito que merece atenção especial de pessoas e organizações."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "O aterro zero começou a ser discutido nos anos 1970. De lá para cá, muito tem se falado sobre essa prática que ainda não está no patamar que deveria pela sua importância no meio ambiente. Para ser mais claro, a  Zero Waste International Alliance (ZWIA) define o termo como “A conservação de todos os recursos por meio da produção, consumo, reutilização e recuperação responsáveis de produtos, embalagens e materiais sem queima e sem lançamentos na terra, na água ou no ar que ameacem o meio ambiente ou a saúde humana.”"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Dentro desta definição, podemos entender que tudo o que é produzido/utilizado pelos indivíduos e empresas precisam de uma atenção ambientalmente consciente; mas como ajudar a sociedade a implementar essa prática? Diante dessa problemática, o Ministério do Meio Ambiente propõe a política dos 5 R’s. Você já ouviu falar?"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Reduzir: Quanto menor o consumo e o desperdício, menor a geração de resíduos; Repensar: Sobretudo os nossos hábitos de consumo; Recusar: Não aceitar produtos ou tratamento de resíduos com significativo impacto ambiental; Reutilizar: Em vez de descartar; Reciclar: Se nenhum dos outros R’s “salvou” o resíduo, que tal diminuir o descarte ao máximo possível destinando materiais (ou partes deles) para serem transformados?"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Sabemos que nem sempre é uma tarefa fácil aplicar essas ações em nosso dia a dia ou educar nossos colaboradores a uma visão mais profunda e responsável sobre sustentabilidade; mas de uma coisa nós temos certeza: o acesso à informação e o estímulo a educação ambiental são pontos importantes e se tornam os primeiros passos para promover uma sociedade mais preocupada com o futuro."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Se a sua empresa ainda está engatinhando na pauta ESG fale com a gente. Nós oferecemos serviços e consultorias para garantir uma geração de negócios em busca de um amanhã mais verde."
+      }
+    ]
+  },
+  {
+    "Id": "10",
+    "titulo": "Dia Mundial da Reciclagem: como você promove o descarte correto de madeiras, pilhas e baterias dentro do seu negócio?",
+    "descricao": "Este é um mês muito importante para quem atua sob as práticas ambientais, sociais e de governança, já que comemoramos o Dia Mundial da Reciclagem. Com a agenda ESG cada …",
+    "capa": "assets/capa-news-10.png",
+    "data": "22 de Março de 2024",
+    "blocos": [
+      {
+        "tipo": "text",
+        "conteudo": "Este é um mês muito importante para quem atua sob as práticas ambientais, sociais e de governança, já que comemoramos o Dia Mundial da Reciclagem. Com a agenda ESG cada vez mais em pauta, fica impossível não associar os cuidados com o meio ambiente ao negócio. Cada vez mais as companhias estão incluindo em suas rotinas de planejamento, organização e coordenação assuntos ligados à sustentabilidade corporativa."
+      },
+      {
+        "tipo": "image",
+        "src": "assets/imagem-news-reciclagem.png",
+        "alt": "Dia Mundial da Reciclagem"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "A reciclagem é um conceito bastante difundido e a porta de entrada para grandes ações verdes, mas é preciso torná-la um hábito que vai muito além do óbvio. Por exemplo, na sua empresa só existe a coleta seletiva de plástico, papel, metal e vidro? Se a resposta é sim, saiba que há outros resíduos que entram nesta configuração."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Com certeza já vimos em muitos lugares as lixeiras coloridas que facilitam a diferenciação entre os resíduos recicláveis, como azul, vermelho, amarelo e verde. Mas há, também, as de cor preta e laranja que podem compor a coleta seletiva da sua empresa. A preta é destinada para madeiras, como móveis velhos, e a laranja para pilhas e baterias, resíduos que frequentemente são descartados no lixo comum e podem contaminar o solo."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Sabendo disso, chegou a hora de você aprimorar a prática do descarte correto na sua organização e instruir seus colaboradores sobre a importância do compromisso que cada um de nós tem no cuidado com o meio ambiente."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Afinal, a única marca que você e o seu negócio querem deixar no mundo é o da consciência ambiental, né?"
+      }
+    ]
+  },
+  {
+    "Id": "11",
+    "titulo": "Projetos sustentáveis com redução de custo: sua empresa precisar pensar no meio ambiente",
+    "descricao": "No mês de março, viramos a nossa atenção para uma importante data: o Dia Nacional de Conscientização sobre as Mudanças Climáticas [aqui vamos inserir o link da matéria produzida e …",
+    "capa": "assets/capa-news-11.png",
+    "data": "22 de Março de 2024",
+    "blocos": [
+      {
+        "tipo": "text",
+        "conteudo": "No mês de março, viramos a nossa atenção para uma importante data: o Dia Nacional de Conscientização sobre as Mudanças Climáticas [aqui vamos inserir o link da matéria produzida e publicada no Blog]. É clichê, mas a verdade é que a grande maioria das pessoas só vai, de fato, analisar suas atitudes ambientais, porque o mundo todo estará falando sobre esse tema tão importante. Mas saiba que você e sua empresa podem atuar de forma inteligente e sustentável o ano todo ao adotar ações e soluções que priorizem o cuidado com o meio ambiente."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "A seguir, separamos quatro hábitos simples que toda organização pode adotar para minimizar os efeitos negativos no mundo. Vamos lá?"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "1/ Consumo consciente de água e energia"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Estas duas ações corriqueiras são muito fáceis de serem aplicadas na rotina organizacional, mas elas só serão efetivamente feitas se seus colaboradores tiverem noção de como a economia de energia e água beneficia o planeta."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Aqui na Bella Vista Ambiental, por exemplo, a água da chuva é captada para abastecer os lagos de piscicultura, com isso, o solo é mantido sempre hidratado. Que tal buscar ações e oferecer palestras e workshops para promover a conscientização do uso destes recursos?"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "2/  Gestão de passivos ambientais"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Ao fechar uma parceria com a Bella Vista Ambiental, especializada em soluções ambientais, é possível fazer um mapeamento das áreas degradadas da sua empresa e como recuperá-las de modo que o seu negócio se torne mais limpo e ambientalmente correto. Inclusive, este estudo pode te conceder licenças ambientais importantes."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "3/ Gerenciamento adequado dos resíduos"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "A Bella Vista Ambiental tem um importante papel na destinação correta de resíduos industriais. Entenda que a maneira como você descarta seus produtos não conformes pode prejudicar ainda mais o solo e o meio ambiente. Lembre-se que o bom exemplo deve começar dentro de casa."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "4/ Adoção de projetos sustentáveis"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Ao adotar projetos sustentáveis, sua marca ganha valor de mercado e visibilidade para novos investimentos. Hoje, os consumidores estão mais preocupados com o meio ambiente e propensos a serem impactados diariamente. Além disso, a inovação e a eficiência farão parte da rotina, gerando mais qualidade para todos os envolvidos."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Nós, da Bella Vista Ambiental, chegamos a 100% de tratamento de nossos rejeitos e temos o compromisso de alavancar a destinação ambientalmente correta, sustentável e econômica de nossos clientes. Quer fazer parte desta mudança sustentável? Entre em contato com a gente!"
+      }
+    ]
+  },
+  {
+    "Id": "12",
+    "titulo": "A importância da rastreabilidade para a empresa e para o cliente",
+    "descricao": "A inovação aproxima essa relação, além de ser um diferencial no mercado Nesse texto, você vai entender como a Bella Vista Ambiental usa a inovação, dentro do mercado de soluções …",
+    "capa": "assets/capa-news-12.png",
+    "data": "22 de Março de 2024",
+    "blocos": [
+      {
+        "tipo": "text",
+        "conteudo": "A inovação aproxima essa relação, além de ser um diferencial no mercado"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Nesse texto, você vai entender como a Bella Vista Ambiental usa a inovação, dentro do mercado de soluções ambientais, para se destacar do seu concorrente e se aproximar do seu cliente."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Cada vez mais o segmento de soluções ambientais está crescendo e focando em novas tecnologias para melhorar a cadeia produtiva. Esse é o caso da Bella Vista Ambiental, que conta com uma rastreabilidade dos seus múltiplos serviços e processos, do início ao fim."
+      },
+      {
+        "tipo": "image",
+        "src": "assets/imagem-news-caminhao.png",
+        "alt": "A importância da rastreabilidade para a empresa e para o cliente"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Mas como isso funciona na prática?"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Ao contratar os serviços da Bella Vista, o cliente pode acompanhar desde a coleta dos resíduos até o seu destino final, tudo através de um processo 100% rastreável que monitora o passo a passo da retirada, da chegada à unidade fabril e da destinação. Além disso, são diversas câmeras operando 24 horas por dia em diversos pontos estratégicos da empresa, garantindo a qualidade do serviço."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Ele se informa sobre tudo sem precisar se comunicar com qualquer funcionário,  acompanhando como anda o processo dos resíduos gerados pela sua empresa e garantido que tudo siga os mais criteriosos e rigorosos padrões ambientais."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Com a Bella Vista Ambiental, o cliente tem mais segurança e confiança em saber que seus resíduos estão sendo tratados com base nas boas práticas de sustentabilidade e cuidados com o meio ambiente."
+      }
+    ]
+  },
+  {
+    "Id": "13",
+    "titulo": "Como a Bella Vista Ambiental transforma resíduos e/ou sobras industriais em alimentação animal e produtos recicláveis",
+    "descricao": "Neste texto, vamos entender como a empresa atua na transformação do resíduo em COPRODUTO, garantindo redução de custos e menos impactos negativos ao meio ambiente. Com a agenda ESG cada …",
+    "capa": "assets/capa-news-13.png",
+    "data": "22 de Março de 2024",
+    "blocos": [
+      {
+        "tipo": "text",
+        "conteudo": "Neste texto, vamos entender como a empresa atua na transformação do resíduo em COPRODUTO, garantindo redução de custos e menos impactos negativos ao meio ambiente. Com a agenda ESG cada vez mais em pauta, a procura por uma relação B2B focada na sustentabilidade pode deixar a sua empresa na frente dos concorrentes."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Pera aí, você nunca ouviu falar no termo COPRODUTO? Não tem problema, a gente te explica!"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "A partir de 2018 surgiu o termo COPRODUTO, que nada mais é do que alimentação destinada aos animais obtida a partir de resíduos sólidos e/ou sobras industriais provenientes de empresas alimentícias. Dentro deste mercado existem dois tipos de indústrias: 1) a que gera o resíduo e 2) a que fabrica o COPRODUTO a partir desse resíduo."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Fica tranquilo porque toda essa cadeia produtiva tem legislação e liberação legal para atuar aqui no Brasil. Inclusive, a indústria que fabrica o COPRODUTO precisa ter registro no MAPA (Ministério da Agricultura, Pecuária e Abastecimento), Corpo de Bombeiros, CETESB, Ibama, licença da Prefeitura e SIGOR/Sigor – a Bella Vista tem tudo isso –, justamente por beneficiar os resíduos. Já a que vende tem isenção, mas, ainda assim, passa por avaliação e precisa ter documentação ativa nos órgãos reguladores."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Como empresa fabricante de COPRODUTO, a Bella Vista recebe os resíduos e sobras industriais e os transforma em alimentação para os animais, mas não é só isso. O gás liberado pelos dejetos deles também é reaproveitado para movimentar um biodigestor, que garante energia suficiente para manter toda a cadeia de produção ativa."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "As embalagens que acompanham esses resíduos e sobras não são desperdiçadas, pelo contrário. As plásticas viram madeiras e telhas ecológicas e tapumes, e as de papel e papelão viram cadernos, cantoneiras, tubetes, caixas e outros itens."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Mas você deve estar se perguntando quais resíduos e sobras podem ser transformados em COPRODUTO, né? A seguir, você encontra uma lista grande, mas, antes, vale ressaltar que os COPRODUTOS apresentam bom valor nutricional e geralmente são utilizados em substituição ao milho e à soja, reduzindo o custo da dieta e/ou favorecendo o ambiente ruminal."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "COPRODUTOS das indústrias de cereais e farinhas: resíduos das indústrias de farinhas, biscoitos, massas, pães, bolos, snacks, barra de cereais, macarrão instantâneo, massa úmida, tortilha, panetone, grãos e fermento."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "COPRODUTOS de frutas e vegetais: resíduos das indústrias de batatas, temperos, derivados de soja, caldos e especiarias, frutas e sopas desidratadas, polpa de frutas e legumes, bebidas à base de soja, sucos de frutas e molhos."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "COPRODUTOS de cacau: resíduos das indústrias de chocolates e bombons."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "COPRODUTOS de misturas/pós para preparo de alimentos e bebidas: resíduos das indústrias de achocolatados em pó, preparados sólidos para refrescos, cappuccino, mistura para bolos, cafés, fórmulas infantis, pós para preparo de sobremesas e misturas/pós para preparo de molhos."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "COPRODUTOS de bebidas líquidas e bebidas compostas: resíduos das indústrias de bebidas mistas de frutas, néctar de frutas e cervejas."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "COPRODUTOS das indústrias de produtos lácteos/derivados lácteos: resíduos das indústrias de sobremesas lácteas, requeijão, petit suisse, iogurtes, bebidas lácteas, composto lácteo, queijos, manteiga, leite condensado, leites, concentrados e evaporados, misturas lácteas, sobremesas lácteas, leites fermentados, doce de leite, leite aromatizado."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "COPRODUTOS a base de açúcares: resíduos das indústrias de açúcar, confeitos, balas e gomas de mascar; glicose, torrone, paçoca, pé-de-moleque e xaropes."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "COPRODUTOS a base de óleos e gorduras vegetais: resíduos das indústrias de creme vegetal, margarina, maionese, óleo composto, azeite, óleos e gorduras vegetais, molhos preparados para salada e outros molhos prontos para consumo."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "COPRODUTOS da alimentação animal: resíduos das indústrias de alimentos para animais de companhia."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "COPRODUTOS mistos: composto de mais de um grupo de resíduos sólidos."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Depois de conhecer o tanto de nutrientes que podem ser reaproveitados para a alimentação animal, nós conseguimos entender a importância do setor de fabricação de COPRODUTOS no Brasil."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Se você gostaria de ter uma empresa parceira que se preocupa com a sustentabilidade, com o meio ambiente e com a agenda ESG, conheça a Bella Vista Ambiental e veja como ela pode ajudar o seu negócio a gerar menos resíduos."
+      }
+    ]
+  },
+  {
+    "Id": "14",
+    "titulo": "Descaracterização de produtos: no que eles podem se tornar?",
+    "descricao": "Foto: Divulgação Você já aprendeu com a gente o que significa a descaracterização de produtos* não conformes e quais são os seus benefícios. Agora, no mês da reciclagem, vamos falar …",
+    "capa": "assets/capa-news-14.png",
+    "data": "22 de Março de 2024",
+    "blocos": [
+      {
+        "tipo": "text",
+        "conteudo": "Você já aprendeu com a gente o que significa a descaracterização de produtos* não conformes e quais são os seus benefícios. Agora, no mês da reciclagem, vamos falar porque essa prática é tão importante para o meio ambiente."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "No mercado industrial é muito comum que as empresas barrem a comercialização de seus próprios produtos por diversos motivos. Neste sentido, eles são encaminhados para companhias especialistas em soluções ambientais, como a Bella Vista Ambiental, para serem submetidos à descaracterização, dando outro destino final a esses resíduos."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Embalagens plásticas, componentes eletrônicos, vidros, papéis contendo informações sigilosas, tudo isso é descaracterizado para proteger as empresas fabricantes, mas que depois é resinserido na cadeia produtiva de alguma forma. Por exemplo, todo o plástico descartado pode ser reciclado para virar matéria prima na produção de outros itens, contribuindo, também, para a logística reversa."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Então, se você é gestor de alguma empresa fabricante e precisa fazer o descarte adequado de seus produtos não conformes, destiná-los à descaracterização é o melhor caminho para se proteger e ainda contribuir com o meio ambiente por meio da reciclagem."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "A descaracterização de produtos não conformes é o principal aliado do seu negócio e da sustentabilidade. Por isso, neste mês de maio, seja consciente e trabalhe a reciclagem de todas as formas dentro da sua organização."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Para saber como a Bella Vista Ambiental pode te ajudar nesta tarefa, entre em contato com a gente!"
+      }
+    ]
+  },
+  {
+    "Id": "15",
+    "titulo": "Entenda como a Bella Vista Ambiental reduz sua emissão de gases de efeito estufa na atmosfera",
+    "descricao": "Os gases de efeito estufa são substâncias capazes de absorver a radiação infravermelha refletida pela Terra após a absorção da luz solar, resultando no aumento da temperatura da superfície terrestre. …",
+    "capa": "assets/capa-news-15.png",
+    "data": "22 de Março de 2024",
+    "blocos": [
+      {
+        "tipo": "text",
+        "conteudo": "Os gases de efeito estufa são substâncias capazes de absorver a radiação infravermelha refletida pela Terra após a absorção da luz solar, resultando no aumento da temperatura da superfície terrestre. Até aí tudo bem, afinal, esse processo permitiu o desenvolvimento de vida em nosso planeta."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "No entanto, as ações do homem têm aumentado a concentração desses gases na atmosfera de forma descontrolada, gerando efeitos climáticos adversos, entre eles o aquecimento global. Os GEEs mais conhecidos são dióxido de carbono (co2); metano (CH4) e óxido nitroso (N2O)."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Segundo um relatório da ONU (Organização das Nações Unidas), esses três principais GEEs atingiram novos recordes em 2021, sendo maiores que os registros pré-industriais, ou seja, antes que as atividades humanas começassem a desequilibrar as emissões naturais dessas substâncias."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Aqui, na Bella Vista Ambiental, essa é uma preocupação que faz parte do dia a dia corporativo, afinal, toda a cadeia produtiva é pautada na sustentabilidade e no compromisso com o meio ambiente."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Um dos serviços oferecidos consiste no gerenciamento correto de resíduos orgânicos, sendo assim, há a transformação de produtos alimentícios não conformes em nutrição animal. Isso ocorre a partir de uma avaliação da matéria prima feita com testes laboratoriais, onde o nutricionista responsável identifica o teor energético e nutritivo de cada material, elaborando a classificação e a aplicação correta para ele."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Após isso, a ração produzida é destinada para a alimentação dos suínos e o gás metano liberado na decomposição dos dejetos dos animais é tratado por meio de um biodigestor. Todo esse gás é captado  e abastece a usina que gera energia limpa para o abastecimento de todo o processo de produção da Bella Vista Ambiental."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Ou seja, somente nesse processo, damos utilidade para produtos orgânicos que seriam descartados, coletamos o gás de efeito estufa que seria liberado na atmosfera e ainda o transformamos em energia renovável."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Muito tem se falado sobre as crises climáticas e como organizações, empresas e a própria população podem contribuir para um problema que afeta diretamente cada um de nós. A Bella Vista Ambiental entende o seu papel e busca ser um exemplo transformador com suas ações em prol ao meio ambiente, afinal, a sustentabilidade está na essência da empresa."
+      }
+    ]
+  },
+  {
+    "Id": "16",
+    "titulo": "Como as mudanças climáticas afetam o nosso dia a dia e o que devemos fazer para minimizar seus efeitos",
+    "descricao": "Neste mês de março, mais precisamente no dia 16, celebramos uma data extremamente importante para todos nós: o Dia Nacional de Conscientização sobre as Mudanças Climáticas. Desde 2011, ela é …",
+    "capa": "assets/capa-news-16.png",
+    "data": "22 de Março de 2024",
+    "blocos": [
+      {
+        "tipo": "text",
+        "conteudo": "Neste mês de março, mais precisamente no dia 16, celebramos uma data extremamente importante para todos nós: o Dia Nacional de Conscientização sobre as Mudanças Climáticas. Desde 2011, ela é debatida no Brasil com o objetivo de trazer reflexões e mobilizações em torno de alternativas mais sustentáveis."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Temperaturas extremas, tempestades e/ou secas intensas, desgaste e empobrecimento do solo, elevação do nível do mar e derretimento de geleiras são alguns dos resultados das mudanças climáticas que podem ser sentidas no mundo todo e que já ceifaram a vida de milhares de pessoas e afetam milhões de vidas diariamente."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "A Organização Mundial da Saúde (OMS) alerta que as mudanças climáticas são uma das emergências de saúde mais urgentes da atualidade. Aqui no país, a emissão de gases de efeito estufa, provenientes da geração de energia elétrica e da queima de combustíveis fósseis, e o desmatamento são as principais causas que contribuem para esse agravamento."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Inclusive, segundo dados da Fundação Oswaldo Cruz (Fiocruz), agência brasileira de pesquisa em saúde, as doenças mais sensíveis a essas mudanças são as infecciosas, como leishmaniose, malária e dengue, dentre outras. Além destas, a hepatite A também é uma preocupação, já que o vírus causador da doença pode ser transmitido no consumo de água e alimentos contaminados, principalmente em territórios que são frequentemente atingidos por inundações."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Lembra que no começo deste texto nós falamos sobre como refletir sobre esta data é importante para todos nós? Porque não somente as empresas e grandes corporações podem fazer a diferença, como cada pessoa, que também pode – e deve – adotar ações mais sustentáveis a fim de garantir que estes efeitos negativos sejam minimizados."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Alguns hábitos podem parecer simples, mas são extremamente necessários diante de um cenário cada vez mais preocupante."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Utilizar os recursos naturais com responsabilidade;"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Apoiar iniciativas de carbono neutro;"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Dar prioridade a atividades que reduzam a emissão de gases de efeito estufa;"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Reduzir o consumo de combustíveis fósseis;"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Trocar a energia convencional pela renovável;"
+      },
+      {
+        "tipo": "text",
+        "conteudo": "Plantar mais árvores."
+      },
+      {
+        "tipo": "text",
+        "conteudo": "O compromisso com a agenda ESG não precisa ficar só no trabalho. Traga hábitos mais sustentáveis para dentro da sua casa e convide todos os seus amigos a cuidarem do meio ambiente junto com você!"
+      }
+    ]
   }
 ]
